@@ -1,7 +1,7 @@
 ---
 title: PowerToys Screen ruler utility for Windows
 description: Screen ruler allows you to quickly measure pixels on your screen based on image edge detection.
-ms.date: 08/03/2023
+ms.date: 11/12/2024
 ms.topic: article
 no-loc: [PowerToys, Windows, Screen ruler, Win]
 ---
@@ -39,6 +39,7 @@ From the Settings menu, the following options can be configured:
 | Capture screen continuously during measuring | When off, the utility takes a single snapshot of your screen. When this is turned on, the utility will attempt real-time detection. Continuous mode will consume more resources when in use. |
 | Per color channel edge detection | Test if all color channels are within a tolerance distance from each other. Otherwise, check that the sum of all color channels differences is smaller than the tolerance. |
 | Pixel tolerance for edge detection | A value between 0-255. A higher value will provide a higher variation so it will be more forgiving with things like gradients and shadows. |
+| Extra units of measurement | Except for showing the measurement in pixels, one can also choose another unit. Available values are pixels, inches, centimeteres, and millimeteres. |
 | Draw feet on the cross | Adds small, serif-like "feet" for additional visual recognition. |
 | Line color | The color for the line that does the measuring. |
 
