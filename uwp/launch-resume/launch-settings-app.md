@@ -1,27 +1,30 @@
 ---
 title: Launch the Windows Settings app
-description: Learn how to launch the Windows Settings app from your app using the ms-settings URI scheme.
+description: Learn how to launch the Windows Settings app from your own Windows apps using the ms-settings URI scheme.
 ms.assetid: C84D4BEE-1FEE-4648-AD7D-8321EAC70290
-ms.date: 07/24/2024
-ms.topic: article
+ms.date: 11/22/2024
+ms.topic: concept-article
 keywords: windows 10, uwp
 ms.localizationpriority: medium
 dev_langs:
   - csharp
   - cppwinrt
+# Customer intent: As a Windows developer, I want to learn how to launch the Windows Settings app from my app using the ms-settings URI scheme.
 ---
 
 # Launch the Windows Settings app
 
-**Important APIs**
+Learn how to launch the Windows Settings app. This topic describes the `ms-settings:` URI scheme. Use this URI scheme to launch the Windows Settings app to specific settings pages.
+
+Launching to the Settings app is an important part of writing a privacy-aware app. If your app can't access a sensitive resource, we recommend providing the user a convenient link to the privacy settings for that resource. For more info, see [Guidelines for privacy-aware apps](../security/index.md).
+
+## Important APIs
+
+The following Windows Runtime (WinRT) APIs are used in this topic:
 
 - [**LaunchUriAsync**](/uwp/api/windows.system.launcher.launchuriasync)
 - [**PreferredApplicationPackageFamilyName**](/uwp/api/windows.system.launcheroptions.preferredapplicationpackagefamilyname)
 - [**DesiredRemainingView**](/uwp/api/windows.system.launcheroptions.desiredremainingview)
-
-Learn how to launch the Windows Settings app. This topic describes the `ms-settings:` URI scheme. Use this URI scheme to launch the Windows Settings app to specific settings pages.
-
-Launching to the Settings app is an important part of writing a privacy-aware app. If your app can't access a sensitive resource, we recommend providing the user a convenient link to the privacy settings for that resource. For more info, see [Guidelines for privacy-aware apps](../security/index.md).
 
 ## How to launch the Settings app
 
@@ -57,7 +60,7 @@ bool result = co_await Windows::System::Launcher::LaunchUriAsync(Windows::Founda
 
 The code above launches the privacy settings page for the camera:
 
-:::image type="content" source="images/privacyawarenesssettingsapp.png" alt-text="camera privacy settings.":::
+:::image type="content" source="images/privacyawarenesssettingsapp.png" alt-text="A screenshot of the Windows camera privacy settings.":::
 
 For more info about launching URIs, see [Launch the default app for a URI](launch-default-app.md).
 
@@ -108,7 +111,7 @@ The following sections describe different categories of ms-settings URIs used to
 |Settings page| URI |
 |-------------|-----|
 | Apps & Features | ms-settings:appsfeatures |
-| App features | ms-settings:appsfeatures-app (Reset, manage add-on & downloadable content, etc. for the app) <br><br> To access this page with a URI, use the ms-settings:appsfeatures-app URI and pass an optional parameter of the _package family name_ of the app. |
+| App features | ms-settings:appsfeatures-app (Reset, manage add-on & downloadable content, etc. for the app) <br><br> To access this page with a URI, use the ms-settings:appsfeatures-app URI and pass an optional parameter of the *package family name* of the app.<br><br>Example: `ms-settings:appsfeatures-app?<PFN>` |
 | Apps for websites | ms-settings:appsforwebsites |
 | Default apps | ms-settings:defaultapps (**Behavior introduced in Windows 11, version 21H2 (with 2023-04 Cumulative Update) or 22H2 (with 2023-04 Cumulative Update), or later.**)<br/>Append the query string parameter in the following formats using the Uri-escaped name of an app to directly launch the default settings page for that app:<br/><br/>- registeredAppMachine=\<Uri-escaped per machine installed name of app\><br/>- registeredAppUser=\<Uri-escaped per user installed name of app\><br/>- registeredAUMID=\<Uri-escaped Application User Model ID\><br/><br/>For more information, see [Launch the Default Apps settings page](launch-default-apps-settings.md). |
 | Default browser settings | ms-settings:defaultbrowsersettings (**Deprecated in Windows 11**) |
@@ -268,7 +271,7 @@ The following sections describe different categories of ms-settings URIs used to
 | Advertising ID | ms-settings:privacy-advertisingid (**Deprecated in Windows 10, version 1809 and later**) |
 | App diagnostics | ms-settings:privacy-appdiagnostics |
 | Automatic file downloads | ms-settings:privacy-automaticfiledownloads |
-| Background Apps | ms-settings:privacy-backgroundapps (**Deprecated in Windows 11, 21H2 and later**) <br><br> **Note:** In Windows 11, the background app permissions are accessed individually. To view the permissions, go to **Apps->Installed apps** and then select **"..."** on a modern app and choose **Advanced options**. The advanced page is present for modern apps, and the **Background apps permissions** section will be present unless a group policy has been set or the user’s global toggle value (the deprecated setting from Windows 10) is set. To access this page with a URI, use the `ms-settings:appsfeatures-app` URI and pass an optional parameter of the _package family name_ of the app. |
+| Background Apps | ms-settings:privacy-backgroundapps (**Deprecated in Windows 11, 21H2 and later**) <br><br> **Note:** In Windows 11, the background app permissions are accessed individually. To view the permissions, go to **Apps->Installed apps** and then select **"..."** on a modern app and choose **Advanced options**. The advanced page is present for modern apps, and the **Background apps permissions** section will be present unless a group policy has been set or the user’s global toggle value (the deprecated setting from Windows 10) is set. To access this page with a URI, use the `ms-settings:appsfeatures-app` URI and pass an optional parameter of the *package family name* of the app. |
 | Background Spatial Perception | ms-settings:privacy-backgroundspatialperception |
 | Calendar | ms-settings:privacy-calendar |
 | Call history | ms-settings:privacy-callhistory |
@@ -375,9 +378,9 @@ The following sections describe different categories of ms-settings URIs used to
 | Pinyin IME settings | ms-settings:regionlanguage-chsime-pinyin (available if the Microsoft Pinyin input method editor is installed)</br>ms-settings:regionlanguage-chsime-pinyin-domainlexicon<br/>ms-settings:regionlanguage-chsime-pinyin-keyconfig<br/>ms-settings:regionlanguage-chsime-pinyin-udp |
 | Speech | ms-settings:speech |
 | Wubi IME settings  | ms-settings:regionlanguage-chsime-wubi (available if the Microsoft Wubi input method editor is installed) |
-| Add display language | ms-settings:regionlanguage-adddisplaylanguage |
-| Language options | ms-settings:regionlanguage-languageoptions |
-| Set display language | ms-settings:regionlanguage-setdisplaylanguage |
+| Add display language | ms-settings:regionlanguage-adddisplaylanguage<br><br>Accepts an *optional* parameter to specify a product.<br><br>Example: `ms-settings:regionlanguage-adddisplaylanguage?product=<PFN>` |
+| Language options | ms-settings:regionlanguage-languageoptions<br><br>Accepts an *optional* parameter to specify a language.<br><br>Example: `ms-settings:regionlanguage-languageoptions?language=en-us` |
+| Set display language | ms-settings:regionlanguage-setdisplaylanguage<br><br>Accepts an *optional* parameter to specify a product.<br><br>Example: `ms-settings:regionlanguage-setdisplaylanguage?product=<PFN>` |
 
 ### Update and security
 
@@ -410,6 +413,8 @@ The following sections describe different categories of ms-settings URIs used to
 | Provisioning | ms-settings:provisioning (only available on mobile and if the enterprise has deployed a provisioning package) |
 | Windows Anywhere | ms-settings:windowsanywhere (device must be Windows Anywhere-capable) |
 
-## See also
+## Related content
 
 [Launch the default app for a URI](launch-default-app.md)
+
+[Launching, resuming, and background tasks](index.md)
