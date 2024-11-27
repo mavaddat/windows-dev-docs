@@ -99,8 +99,7 @@ The following sections describe different categories of ms-settings URIs used to
 | Access work or school | ms-settings:workplace |
 | Email & app accounts  | ms-settings:emailandaccounts |
 | Family & other people | ms-settings:otherusers |
-| Provisioning | ms-settings:provisioning (only available on mobile and if the enterprise has deployed a provisioning package) |
-| Provisioning | ms-settings:workplace-provisioning (only available if enterprise has deployed a provisioning package) |
+| Provisioning | ms-settings:provisioning (only available on mobile and if the enterprise has deployed a provisioning package)<br>ms-settings:workplace-provisioning (only available if enterprise has deployed a provisioning package) |
 | Repair token | ms-settings:workplace-repairtoken |
 | Set up a kiosk | ms-settings:assignedaccess |
 | Sign-in options | ms-settings:signinoptions<br>ms-settings:signinoptions-dynamiclock |
