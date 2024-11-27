@@ -2,9 +2,9 @@
 title: Launch the Windows Settings app
 description: Learn how to launch the Windows Settings app from your own Windows apps using the ms-settings URI scheme.
 ms.assetid: C84D4BEE-1FEE-4648-AD7D-8321EAC70290
-ms.date: 11/22/2024
+ms.date: 11/27/2024
 ms.topic: concept-article
-keywords: windows 10, uwp
+keywords: windows 10, windows, settings, windows 11, uwp, uri
 ms.localizationpriority: medium
 dev_langs:
   - csharp
@@ -16,7 +16,7 @@ dev_langs:
 
 Learn how to launch the Windows Settings app. This topic describes the `ms-settings:` URI scheme. Use this URI scheme to launch the Windows Settings app to specific settings pages.
 
-Launching to the Settings app is an important part of writing a privacy-aware app. If your app can't access a sensitive resource, we recommend providing the user a convenient link to the privacy settings for that resource. For more info, see [Guidelines for privacy-aware apps](../security/index.md).
+Launching to the Settings app is an important part of writing a privacy-aware app. If your app can't access a sensitive resource, we recommend providing the user a convenient link to the privacy settings for that resource. For more information, see [Guidelines for privacy-aware apps](../security/index.md).
 
 ## Important APIs
 
@@ -48,7 +48,7 @@ In this example, a Hyperlink XAML control is used to launch the privacy settings
 
 ### Calling LaunchUriAsync
 
-Alternatively, your app can call the [**LaunchUriAsync**](/uwp/api/windows.system.launcher.launchuriasync) method to launch the **Settings** app. This example shows how to launch to the privacy settings page for the camera using the `ms-settings:privacy-webcam` URI.
+Alternatively, your app can call the [LaunchUriAsync](/uwp/api/windows.system.launcher.launchuriasync) method to launch the **Settings** app. This example shows how to launch to the privacy settings page for the camera using the `ms-settings:privacy-webcam` URI.
 
 ```cs
 bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings:privacy-webcam"));
@@ -88,10 +88,9 @@ The following sections describe different categories of ms-settings URIs used to
 - [System](#system)
 - [Time and language](#time-and-language)
 - [Update and security](#update-and-security)
-- [User accounts](#user-accounts)
 
 > [!NOTE]
-> The availability of some settings pages varies by Windows version and SKU. The notes column also captures additional requirements that must be met for a page to be available.
+> The availability of some settings pages varies by Windows version and SKU. For some settings, the URI column also captures some usage information and any additional requirements that must be met for a page to be available.
 
 ### Accounts
 
@@ -100,9 +99,13 @@ The following sections describe different categories of ms-settings URIs used to
 | Access work or school | ms-settings:workplace |
 | Email & app accounts  | ms-settings:emailandaccounts |
 | Family & other people | ms-settings:otherusers |
+| Provisioning | ms-settings:provisioning (only available on mobile and if the enterprise has deployed a provisioning package) |
+| Provisioning | ms-settings:workplace-provisioning (only available if enterprise has deployed a provisioning package) |
+| Repair token | ms-settings:workplace-repairtoken |
 | Set up a kiosk | ms-settings:assignedaccess |
 | Sign-in options | ms-settings:signinoptions<br>ms-settings:signinoptions-dynamiclock |
 | Sync your settings | ms-settings:sync<br>ms-settings:backup (**Backup page deprecated in Windows 11**) |
+| Windows Anywhere | ms-settings:windowsanywhere (device must be Windows Anywhere-capable) |
 | Windows Hello setup | ms-settings:signinoptions-launchfaceenrollment<br>ms-settings:signinoptions-launchfingerprintenrollment |
 | Your info | ms-settings:yourinfo |
 
@@ -171,7 +174,6 @@ The following sections describe different categories of ms-settings URIs used to
 | Color filters | ms-settings:easeofaccess-colorfilter </br> ms-settings:easeofaccess-colorfilter-adaptivecolorlink </br> ms-settings:easeofaccess-colorfilter-bluelightlink |
 | Display | ms-settings:easeofaccess-display |
 | Eye control | ms-settings:easeofaccess-eyecontrol |
-| Fonts | ms-settings:fonts |
 | High contrast | ms-settings:easeofaccess-highcontrast |
 | Keyboard | ms-settings:easeofaccess-keyboard |
 | Magnifier | ms-settings:easeofaccess-magnifier |
@@ -244,6 +246,7 @@ The following sections describe different categories of ms-settings URIs used to
 | Colors | ms-settings:personalization-colors<br/>ms-settings:colors |
 | Customize Copilot key on keyboard | ms-settings:personalization-textinput-copilot-hardwarekey |
 | Dynamic Lighting | ms-settings:personalization-lighting |
+| Fonts | ms-settings:fonts |
 | Glance | ms-settings:personalization-glance (**Deprecated in Windows 10, version 1809 and later**) |
 | Lock screen | ms-settings:lockscreen |
 | Navigation bar | ms-settings:personalization-navbar (**Deprecated in Windows 10, version 1809 and later**) |
@@ -341,9 +344,8 @@ The following sections describe different categories of ms-settings URIs used to
 | Battery Saver settings | ms-settings:batterysaver-settings (only available on devices that have a battery, such as a tablet) |
 | Battery use | ms-settings:batterysaver-usagedetails (only available on devices that have a battery, such as a tablet) |
 | Clipboard | ms-settings:clipboard |
-| Display | ms-settings:display |
 | Default Save Locations | ms-settings:savelocations |
-| Display | ms-settings:screenrotation |
+| Display | ms-settings:display<br>ms-settings:screenrotation |
 | Duplicating my display | ms-settings:quietmomentspresentation |
 | During these hours | ms-settings:quietmomentsscheduled |
 | Encryption | ms-settings:deviceencryption |
@@ -403,15 +405,6 @@ The following sections describe different categories of ms-settings URIs used to
 | Windows Update-Restart options | ms-settings:windowsupdate-restartoptions |
 | Windows Update-Seeker on demand| ms-settings:windowsupdate-seekerondemand |
 | Windows Update-View update history | ms-settings:windowsupdate-history |
-
-### User accounts
-
-|Settings page| URI |
-|-------------|-----|
-| Provisioning | ms-settings:workplace-provisioning (only available if enterprise has deployed a provisioning package) |
-| Repair token | ms-settings:workplace-repairtoken |
-| Provisioning | ms-settings:provisioning (only available on mobile and if the enterprise has deployed a provisioning package) |
-| Windows Anywhere | ms-settings:windowsanywhere (device must be Windows Anywhere-capable) |
 
 ## Related content
 
