@@ -380,9 +380,9 @@ The following sections describe different categories of ms-settings URIs used to
 | Pinyin IME settings | ms-settings:regionlanguage-chsime-pinyin (available if the Microsoft Pinyin input method editor is installed)</br>ms-settings:regionlanguage-chsime-pinyin-domainlexicon<br/>ms-settings:regionlanguage-chsime-pinyin-keyconfig<br/>ms-settings:regionlanguage-chsime-pinyin-udp |
 | Speech | ms-settings:speech |
 | Wubi IME settings  | ms-settings:regionlanguage-chsime-wubi (available if the Microsoft Wubi input method editor is installed) |
-| Add display language | ms-settings:regionlanguage-adddisplaylanguage<br><br>Accepts an *optional* parameter to specify a product.<br><br>Example: `ms-settings:regionlanguage-adddisplaylanguage?product=<PFN>` |
-| Language options | ms-settings:regionlanguage-languageoptions<br><br>Accepts an *optional* parameter to specify a language.<br><br>Example: `ms-settings:regionlanguage-languageoptions?language=en-us` |
-| Set display language | ms-settings:regionlanguage-setdisplaylanguage<br><br>Accepts an *optional* parameter to specify a product.<br><br>Example: `ms-settings:regionlanguage-setdisplaylanguage?product=<PFN>` |
+| Add display language | ms-settings:regionlanguage-adddisplaylanguage<br><br>Accepts an *optional* parameter to specify a product ID.<br><br>Example: `ms-settings:regionlanguage-adddisplaylanguage?product=<Product ID>` |
+| Language options | ms-settings:regionlanguage-languageoptions<br><br>Accepts an *optional* parameter to specify a language tag.<br><br>Example: `ms-settings:regionlanguage-languageoptions?language=en-US` |
+| Set display language | ms-settings:regionlanguage-setdisplaylanguage<br><br>Accepts an *optional* parameter to specify a product ID.<br><br>Example: `ms-settings:regionlanguage-setdisplaylanguage?product=<Product ID>` |
 
 ### Update and security
 
