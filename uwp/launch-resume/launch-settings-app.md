@@ -210,6 +210,11 @@ The following sections describe different categories of ms-settings URIs used to
 > [!NOTE]
 > These settings are only available if the [Mixed Reality Portal](https://apps.microsoft.com/detail/9ng1h8b3zc7m) app is installed.
 
+> [!IMPORTANT]
+> Windows Mixed Reality devices are not supported with Windows 11, version 24H2 and newer.
+>
+> Windows Mixed Reality support is limited to Windows 10, version 20H2 through Windows 11, version 23H2.
+
 | Settings page | URI |
 |---------------|-----|
 | Audio and speech | ms-settings:holographic-audio |
