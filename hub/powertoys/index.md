@@ -312,7 +312,7 @@ The currently available utilities include:
         [![ZoomIt by Sysinternals screenshot](../images/powertoys-zoomit.png)](zoomit.md)
     :::column-end:::
     :::column span="2":::
-        [ZoomIt](zoomit.md) is a screen zoom, annotation, and recording tool for technical presentations and demos. It's one of the most popular [Sysinternals](/sysinternals/) utilities, and it's now available with PowerToys.
+        [ZoomIt](zoomit.md) is a screen zoom, annotation, and recording tool for technical presentations and demos. It's one of the most popular [Sysinternals](/sysinternals/) utilities, and it's now available in PowerToys.
     :::column-end:::
 :::row-end:::
 
