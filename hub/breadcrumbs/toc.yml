@@ -9,3 +9,6 @@
     - name: Developer environment
       tocHref: /windows/dev-environment/
       topicHref: /windows/dev-environment/index
+      - name: PowerToys
+        # Topic in dev-environment TOC
+        topicHref: /windows/powertoys/index
