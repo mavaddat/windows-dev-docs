@@ -305,6 +305,17 @@ The currently available utilities include:
     :::column-end:::
 :::row-end:::
 
+### ZoomIt
+
+:::row:::
+    :::column:::
+        [![ZoomIt by Sysinternals screenshot](../images/powertoys-zoomit.png)](zoomit.md)
+    :::column-end:::
+    :::column span="2":::
+        [ZoomIt](zoomit.md) is a screen zoom, annotation, and recording tool for technical presentations and demos. It's one of the most popular [Sysinternals](/sysinternals/) utilities, and it's now available with PowerToys.
+    :::column-end:::
+:::row-end:::
+
 ## Languages
 
 PowerToys is currently available in the following languages: Arabic (Saudi Arabia), Chinese (simplified), Chinese (traditional), Czech, Dutch, English, French, German, Hebrew, Hungarian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Portuguese (Brazil), Russian, Spanish, Turkish, Ukrainian.
