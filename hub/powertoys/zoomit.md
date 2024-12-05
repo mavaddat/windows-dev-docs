@@ -48,8 +48,8 @@ In addition to enabling or disabling ZoomIt in the PowerToys Settings, you can c
 | DemoType settings | Description |
 |------------------|-------------|
 | Input file | Specify text in a file to use in DemoType mode. |
-| Demo Type Toggle Hotkey | Set the hotkey to toggle DemoType mode on and off. The default hotkey is <kbd>Ctrl</kbd>+<kbd>7</kbd>. |
-| Drive input while typing | Enable or disable the ability to drive input with typing in DemoType mode. The ability to drive input with typing is disabled by default. |
+| DemoType Toggle Hotkey | Set the hotkey to toggle DemoType mode on and off. The default hotkey is <kbd>Ctrl</kbd>+<kbd>7</kbd>. |
+| Drive input while typing | Enable or disable the ability to drive input with typing in DemoType mode. The default setting is disabled. |
 | DemoType typing speed | Set the typing speed in DemoType mode (10 to 100). The default typing speed is 55, and larger numbers are faster. |
 
 | Break settings | Description |
