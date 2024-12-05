@@ -15,7 +15,7 @@ ZoomIt is a screen zoom, annotation, and recording tool for technical presentati
 
 ZoomIt is also one of the [Sysinternals](/sysinternals/) and works on all versions of Windows and you can use touch and pen input for ZoomIt drawing on tablets.
 
-For more information, see [ZoomIt](/sysinternals/zoomit/) in the Sysinternals documentation.
+For more information, see [ZoomIt](/sysinternals/downloads/zoomit) in the Sysinternals documentation.
 
 ## Enabling
 
@@ -75,6 +75,6 @@ In addition to enabling or disabling ZoomIt in the PowerToys Settings, you can c
 |---------------|-------------|
 | Snip Toggle Hotkey | Set the hotkey to toggle screen snipping on and off. The default hotkey is <kbd>Ctrl</kbd>+<kbd>6</kbd>. |
 
-For more details on using ZoomIt, including additional hotkey information, see [ZoomIt](/sysinternals/zoomit/) in the Sysinternals documentation.
+For more details on using ZoomIt, including additional hotkey information, see [ZoomIt](/sysinternals/downloads/zoomit) in the Sysinternals documentation.
 
 [!INCLUDE [install-powertoys.md](../includes/install-powertoys.md)]
