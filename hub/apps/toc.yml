@@ -12,8 +12,6 @@ items:
       items: 
         - name: Overview of framework options
           href: get-started/index.md
-        - name: Client app development frameworks FAQ
-          href: get-started/client-frameworks-faq.yml
         - name: Start developing Windows apps
           href: get-started/start-here.md
         - name: Build your first app
@@ -220,6 +218,8 @@ items:
               href: develop/security/tools-libraries.md
             - name: Reference for passkeys
               href: develop/security/reference.md
+            - name: Third-party passkey manager support
+              href: develop/security/third-party.md
         - name: Speech
           href: develop/speech.md
         - name: User interface
@@ -653,8 +653,6 @@ items:
               items: 
                   - name: Product page experiments
                     href: publish/product-page-experiments.md
-                  - name: In-app ads
-                    href: publish/in-app-ads.md
                   - name: Use Microsoft Store Web Installer to distribute apps
                     href: distribute-through-store/how-to-use-store-web-installer-for-distribution.md  
                   - name: App management and services
