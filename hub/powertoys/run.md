@@ -1,7 +1,7 @@
 ---
 title: PowerToys Run utility for Windows
 description: Run is a quick launcher for power users that contains additional features without sacrificing performance.
-ms.date: 11/19/2024
+ms.date: 12/25/2024
 ms.topic: concept-article
 ms.localizationpriority: medium
 no-loc: [PowerToys, Windows, File Explorer, PowerToys Run, Window Walker]
@@ -197,7 +197,8 @@ The Calculator plugin supports the following operations:
 | Power of x | pow( x, y ) | Calculate a number (x) raised to the power of some other number (y). |
 | Factorial | x! | |
 | Sign | sign( -x ) | A number that indicates the sign of value:<br />• `-1` if number is less than zero.<br />• `0` if number is zero.<br />• `1` if number is greater than zero. |
-| Random number | rand() | Returns a fractional number between 0 and 1. |
+| Random fractional number | rand() | Returns a fractional number between 0 and 1. |
+| Random integer number | randi( x ) | Returns a integer number between 0 and `x`. |
 | Pi | pi | Returns the number pi. |
 | Sine | sin( x ) | |
 | Cosine | cos( x ) | |
