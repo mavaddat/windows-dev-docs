@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "hub/apps/design/devices/kinect-for-windows.md",
+      "redirect_url": "https://azure.microsoft.com/en-us/products/kinect-dk",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "uwp/xbox-apps/automate-launching-uwp-apps.md",
       "redirect_url": "/previous-versions/windows/uwp/xbox-apps/automate-launching-uwp-apps",
       "redirect_document_id": false
@@ -1487,13 +1492,13 @@
     },
     {
       "source_path": "uwp/controls-and-patterns/xaml-styles.md",
-      "redirect_url": "/windows/uwp/design/controls-and-patterns/xaml-styles",
-      "redirect_document_id": true
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-styles",
+      "redirect_document_id": false
     },
     {
       "source_path": "uwp/controls-and-patterns/xaml-theme-resources.md",
-      "redirect_url": "/windows/uwp/design/controls-and-patterns/xaml-theme-resources",
-      "redirect_document_id": true
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-theme-resources",
+      "redirect_document_id": false
     },
     {
       "source_path": "uwp/controls-and-patterns/tiles-and-notifications/channel-types.md",
@@ -1822,7 +1827,7 @@
     },
     {
       "source_path": "uwp/layout/show-multiple-views.md",
-      "redirect_url": "/windows/uwp/design/layout/show-multiple-views",
+      "redirect_url": "/windows/uwp/ui-input/show-multiple-views",
       "redirect_document_id": true
     },
     {
@@ -2027,7 +2032,7 @@
     },
     {
       "source_path": "uwp/graphics/3-d-perspective-effects.md",
-      "redirect_url": "/windows/uwp/design/layout/3-d-perspective-effects",
+      "redirect_url": "/windows/apps/develop/platform/xaml/3-d-perspective-effects",
       "redirect_document_id": false
     },
     {
@@ -6252,12 +6257,12 @@
     },
     {
       "source_path": "uwp/design/controls-and-patterns/xaml-styles.md",
-      "redirect_url": "/windows/apps/design/style/xaml-styles",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-styles",
       "redirect_document_id": false
     },
     {
       "source_path": "uwp/design/controls-and-patterns/xaml-theme-resources.md",
-      "redirect_url": "/windows/apps/design/style/xaml-theme-resources",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-theme-resources",
       "redirect_document_id": false
     },
     {
@@ -6637,7 +6642,7 @@
     },
     {
       "source_path": "uwp/design/layout/3-d-perspective-effects.md",
-      "redirect_url": "/windows/apps/design/layout/3-d-perspective-effects",
+      "redirect_url": "/windows/apps/develop/platform/xaml/3-d-perspective-effects",
       "redirect_document_id": false
     },
     {
@@ -6647,12 +6652,12 @@
     },
     {
       "source_path": "uwp/design/layout/app-window.md",
-      "redirect_url": "/windows/apps/design/layout/app-window",
+      "redirect_url": "/windows/uwp/ui-input/app-window",
       "redirect_document_id": false
     },
     {
       "source_path": "uwp/design/layout/application-view.md",
-      "redirect_url": "/windows/apps/design/layout/application-view",
+      "redirect_url": "/windows/uwp/ui-input/application-view",
       "redirect_document_id": false
     },
     {
@@ -6712,12 +6717,12 @@
     },
     {
       "source_path": "uwp/design/layout/show-multiple-views.md",
-      "redirect_url": "/windows/apps/design/layout/show-multiple-views",
+      "redirect_url": "/windows/uwp/ui-input/show-multiple-views",
       "redirect_document_id": false
     },
     {
       "source_path": "uwp/design/layout/transforms.md",
-      "redirect_url": "/windows/apps/design/layout/transforms",
+      "redirect_url": "/windows/apps/develop/platform/xaml/transforms",
       "redirect_document_id": false
     },
     {
@@ -7097,7 +7102,7 @@
     },
     {
       "source_path": "uwp/design/style/brushes.md",
-      "redirect_url": "/windows/apps/design/style/brushes",
+      "redirect_url": "/windows/apps/develop/platform/xaml/brushes",
       "redirect_document_id": false
     },
     {
@@ -7117,7 +7122,7 @@
     },
     {
       "source_path": "uwp/design/style/reveal-focus.md",
-      "redirect_url": "/windows/apps/design/style/reveal-focus",
+      "redirect_url": "/windows/uwp/ui-input/reveal-focus",
       "redirect_document_id": false
     },
     {
@@ -8562,11 +8567,88 @@
     },
     {
       "source_path": "hub/dev-home/project-ironsides.md",
-      "redirect_url": "/windows/dev-home/dev-diagnostics",
+      "redirect_url": "/windows/dev-home/#experimental-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/dev-home/dev-diagnostics.md",
+      "redirect_url": "/windows/dev-home/#experimental-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/dev-home/quickstart-playground.md",
+      "redirect_url": "/windows/dev-home/#experimental-features",
+      "redirect_document_id": false
+    },   
+    {
+      "source_path": "hub/apps/design/style/xaml-control-templates.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-control-templates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/style/xaml-resource-dictionary.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-resource-dictionary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/style/xaml-styles.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-styles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/style/xaml-theme-resources.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/xaml-theme-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/layout/transforms.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/transforms",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/layout/3-d-perspective-effects.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/3-d-perspective-effects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/style/brushes.md",
+      "redirect_url": "/windows/apps/develop/platform/xaml/brushes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/style/reveal-focus.md",
+      "redirect_url": "/windows/uwp/ui-input/reveal-focus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/layout/app-window.md",
+      "redirect_url": "/windows/uwp/ui-input/app-window",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/layout/application-view.md",
+      "redirect_url": "/windows/uwp/ui-input/application-view",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/design/layout/show-multiple-views.md",
+      "redirect_url": "/windows/uwp/ui-input/show-multiple-views",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/android/defender-settings.md",
+      "redirect_url": "/defender-endpoint/microsoft-defender-security-center-antivirus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/get-started/client-frameworks-faq.yml",
+      "redirect_url": "/windows/apps/get-started/windows-developer-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "hub/apps/publish/in-app-ads.md",
+      "redirect_url": "/windows/apps/publish/attract-customers-and-promote-your-apps",
       "redirect_document_id": false
     }
   ]
 }
-
-
-

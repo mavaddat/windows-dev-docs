@@ -59,7 +59,7 @@ Windows 11 uses Segoe UI Variable with the following attributes based on the con
 ## Examples
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see Typography principles in action](winui3gallery:/item/Typography).
+> [Open the WinUI 3 Gallery app and see Typography principles in action](winui3gallery:/item/Typography)
 
 > The **WinUI 3 Gallery** app includes interactive examples of most WinUI 3 controls, features, and functionality. Get the app from the [Microsoft Store](https://www.microsoft.com/store/productId/9P3JFPWWDZRC) or get the source code on [GitHub](https://github.com/microsoft/WinUI-Gallery)
 
@@ -113,7 +113,7 @@ Windows 11 uses the following values for various types of text in the UI.
 | ![Example of title large text](images/typography_title_large.svg)| Display semibold | 40/52 epx        |
 | ![Example of display text](images/typography_display.svg)| Display semibold | 68/92 epx        |
 
-Check out the guidance on using the [XAML type ramp](../style/xaml-theme-resources.md#the-xaml-type-ramp) for more details.
+Check out the guidance on using the [XAML type ramp](../../develop/platform/xaml/xaml-theme-resources.md#the-xaml-type-ramp) for more details.
 
 ### Alignment
 
@@ -231,7 +231,7 @@ Variable fonts are good for precisely controlling the appearance of text.
 ## Related articles
 
 - [Text controls](../controls/text-controls.md)
-- [XAML theme resources](../style/xaml-theme-resources.md#the-xaml-type-ramp)
-- [XAML styles](../style/xaml-styles.md)
+- [XAML theme resources](../../develop/platform/xaml/xaml-theme-resources.md#the-xaml-type-ramp)
+- [XAML styles](../../develop/platform/xaml/xaml-styles.md)
 - [Microsoft Typography](/typography/)
 - [Variable Fonts](/typography/develop/font-variations)

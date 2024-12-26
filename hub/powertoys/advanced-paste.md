@@ -1,9 +1,10 @@
 ---
 title: PowerToys Advanced Paste for Windows
 description: A tool that enables you to paste the text from your clipboard into any format needed. It can be enhanced with an AI-powered option that is 100% opt-in and requires an OpenAI key.
-ms.date: 11/04/2024
-ms.topic: article
+ms.date: 12/13/2024
+ms.topic: concept-article
 no-loc: [PowerToys, Windows, Paste as Plain Text, Advanced Paste, Win]
+# Customer intent: Learn how to use the Advanced Paste feature in PowerToys to paste text from your clipboard into any format needed.
 ---
 
 # Advanced Paste
@@ -26,12 +27,13 @@ From the Settings menu, the following options can be configured:
 
 | Setting | Description |
 | :--- | :--- |
-| Enable Paste with AI | Enables the AI-powered paste feature. An OpenAI API key is required (requires an account on [platform.openai.com](https://platform.openai.com/)). |
+| Enable Paste with AI | Enables the AI-powered paste feature. An OpenAI API key is required (requires an account on [platform.openai.com](https://platform.openai.com/)). See [Paste text with AI](#paste-text-with-ai) for more information. |
+| Enable advanced AI | Enables the Advanced AI feature which allows [Semantic Kernel](/semantic-kernel/overview/) to be used to define a chain of actions to be performed when using "Paste with AI". See [Paste with Advanced AI](#paste-with-advanced-ai) for more information.<br/><br/>This setting is off and disabled when Enable Paste with AI is disabled. When enabling Enable Paste with AI, Enable advanced AI is also enabled by default, allowing users immediate access to the feature. |
 | Custom format preview | Enable to preview the output of the custom format before pasting. |
 | Clipboard history | Enable to automatically save clipboard history. |
 | Open Advanced Paste shortcut | The customizable keyboard command to open the **Advanced Paste** window. |
 | Automatically close the Advanced Paste window after it loses focus | Determines whether the Advanced Paste window will close after focus is lost from the window. |
-| Custom Actions | Create and manage advanced paste custom actions. (Requires Paste with AI to be enabled). |
+| Custom Actions | When using Paste with AI, save the prompts you frequently use and give them descriptive names, so you can easily select them from the Advanced Paste window without having to type them out. You can also assign each action a keyboard command, so you can execute them without opening the Advanced Paste window. |
 | Paste as plain text directly shortcut | The customizable keyboard command to paste as plain text without opening the **Advanced Paste** window. |
 | Paste as Markdown directly shortcut | The customizable keyboard command to paste as Markdown without opening the **Advanced Paste** window. |
 | Paste as JSON directly shortcut | The customizable keyboard command to paste as JSON without opening the **Advanced Paste** window. |
@@ -116,26 +118,17 @@ Hello World!
 
 If pasting files is accepted within the application that you are using (e.g. File Explorer), then the paste as .txt file action will take the input text and paste a .txt file.
 
+> [!NOTE]
+> Paste as .txt file is a feature that runs locally and doesn't use AI.
+
 ### Paste as .html file
 
-**Paste as .html file** enables you to paste text stored in your clipboard as a .html file with an auto-generated file name. You can optionally set a quick key shortcut in settings.
+**Paste as .html file** enables you to paste html data stored in your clipboard as a .html file with an auto-generated file name. This is especially useful for saving a part of a webpage from a browser - including links, formatted text and images. You can optionally set a quick key shortcut in settings.
 
-Sample input:
+If pasting files is accepted within the application that you are using (e.g. File Explorer), then the paste as .html file action will take the input data and paste a .html file.
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>PowerToys</title>
-</head>
-<body>
-    <h1>PowerToys</h1>
-    <p>PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.</p>
-</body>
-</html>
-```
-
-If pasting files is accepted within the application that you are using (e.g. File Explorer), then the paste as .html file action will take the input text and paste a .html file.
+> [!NOTE]
+> Paste as .html file is a feature that runs locally and doesn't use AI.
 
 ### Paste text with AI
 
@@ -165,6 +158,27 @@ AI output when prompting to "Format the text as if it were written by Mark Twain
 > [!NOTE]
 > As with any AI tool, the quality of the output is dependent on the quality of the input. The more context you provide, the better the AI will be able to understand and respond to your request. Be sure to carefully review the output before using it. Please see OpenAI's [privacy](https://openai.com/policies/privacy-policy) and [terms](https://openai.com/policies/terms-of-use) pages for more info on AI usage in this feature.
 
+### Paste with Advanced AI
+
+This feature uses [Semantic Kernel](/semantic-kernel/overview/) to allow you to define a chain of actions to be performed when using "Paste with AI". Using this feature you can:
+
+- Work with non-text input such as images.
+- Produce non-text output like files.
+- Chain multiple actions together and execute them in sequence. For example, Image to text --> Text to JSON text --> JSON text to .txt file.
+- Produce meaningful AI-generated error messages.
+
+For these example commands, assume there is an image in the clipboard that contains some text that you would like to save to a text file in another language. You can phrase multiple steps explicitly:
+
+```
+Convert this image to text using OCR, translate the text to French, and then save the text as a .txt file.
+```
+
+Or you can phrase the steps to be more implicit:
+
+```
+Translate to French and save as a .txt file.
+```
+
 ## Advanced image paste
 
 Advanced Paste includes several image-based paste options. These options are available in the **Advanced Paste** window, which can be opened using the activation shortcut. You can optionally set a quick key shortcut in settings.
@@ -181,5 +195,8 @@ Advanced Paste includes several image-based paste options. These options are ava
 ### Paste as .png file
 
 **Paste as .png file** enables you to quickly paste an image format, like a bitmap, to a .png file. You can optionally create a quick key shortcut to invoke this paste action.
+
+> [!NOTE]
+> Paste as .png file is a feature that runs locally and doesn't use AI.
 
 [!INCLUDE [install-powertoys.md](../includes/install-powertoys.md)]
