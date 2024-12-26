@@ -198,7 +198,7 @@ The Calculator plugin supports the following operations:
 | Factorial | x! | |
 | Sign | sign( -x ) | A number that indicates the sign of value:<br />• `-1` if number is less than zero.<br />• `0` if number is zero.<br />• `1` if number is greater than zero. |
 | Random fractional number | rand() | Returns a fractional number between 0 and 1. |
-| Random integer number | randi( x ) | Returns a integer number between 0 and `x`. |
+| Random integer number | randi( x ) | Returns an integer number between 0 and `x`. |
 | Pi | pi | Returns the number pi. |
 | Sine | sin( x ) | |
 | Cosine | cos( x ) | |
