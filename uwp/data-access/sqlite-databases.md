@@ -41,7 +41,7 @@ The rest of this guide helps you to use this library.
 
 ## Set up your solution to use the Microsoft.Data.SQlite library
 
-We'll start with a basic UWP project, and then install the appropriate Nuget packages.
+We'll start with a basic UWP project, and then install the appropriate Nuget packages, please pay attention, install `Microsoft.Data.Sqlite` NOT `Microsoft.Data.Sqlite.Core`.
 
 All supported versions of Windows support SQLite, so your app does not have to package SQLite libraries. Instead, your app can use the version of SQLite that comes installed with Windows. This helps you in a few ways.
 
@@ -150,6 +150,7 @@ public static void AddData(string inputText)
     using (SqliteConnection db =
       new SqliteConnection($"Filename={dbpath}"))
     {
+        SQLitePCL.Batteries.Init();
         db.Open();
 
         SqliteCommand insertCommand = new SqliteCommand();
