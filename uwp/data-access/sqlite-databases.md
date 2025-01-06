@@ -41,7 +41,10 @@ The rest of this guide helps you to use this library.
 
 ## Set up your solution to use the Microsoft.Data.SQlite library
 
-We'll start with a basic UWP project, and then install the appropriate Nuget packages, please pay attention, install `Microsoft.Data.Sqlite` NOT `Microsoft.Data.Sqlite.Core`.
+We'll start with a basic UWP project, and then install the appropriate Nuget packages.
+
+> [!NOTE]
+> Make sure you install the `Microsoft.Data.Sqlite' package and not 'Microsoft.Data.Sqlite.Core`. This package will install `Microsoft.Data.Sqlite.Core` as a dependency.
 
 All supported versions of Windows support SQLite, so your app does not have to package SQLite libraries. Instead, your app can use the version of SQLite that comes installed with Windows. This helps you in a few ways.
 
