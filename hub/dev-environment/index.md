@@ -64,8 +64,6 @@ Windows invites you to code as you are. Use whatever coding language or framewor
 :::row-end:::
 <br>
 
-> [!VIDEO 54e6c532-a86c-4a39-81ab-40e28ce2ba96]
-
 ## AI for Windows apps
 
 :::row:::
