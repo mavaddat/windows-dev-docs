@@ -205,12 +205,12 @@ First, here's the [**SelectedItem**](/windows/windows-app-sdk/api/winrt/microsof
 </Window>
 ```
 
-For the [**CollectionViewSource**](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource) technique, first add a `CollectionViewSource` as a window resource.
+For the [**CollectionViewSource**](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource) technique, first add a `CollectionViewSource` as a resource of the top-level `Grid`.
 
 ``` xaml
-<Window.Resources>
+<Grid.Resources>
     <CollectionViewSource x:Name="RecordingsCollection" Source="{x:Bind ViewModel.Recordings}"/>
-</Window.Resources>
+</Grid.Resources>
 ```
 
 And then adjust the bindings on the [**ListView**](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.listview) (which no longer needs to be named) and on the details view to use the [**CollectionViewSource**](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.data.collectionviewsource). Note that by binding the details view directly to the `CollectionViewSource`, you're implying that you want to bind to the current item in bindings where the path cannot be found on the collection itself. There's no need to specify the `CurrentItem` property as the path for the binding, although you can do that if there's any ambiguity).
@@ -262,12 +262,13 @@ public class StringFormatter : Microsoft.UI.Xaml.Data.IValueConverter
 }
 ```
 
-Now we can add an instance of `StringFormatter` as a page resource and use it in the binding of the `TextBlock` that displays the `ReleaseDateTime` property.
+Now we can add an instance of `StringFormatter` as a resource and use it in the binding of the `TextBlock` that displays the `ReleaseDateTime` property.
 
 ``` xaml
-<Window.Resources>
+<Grid.Resources>
+    ...
     <local:StringFormatter x:Key="StringFormatterValueConverter"/>
-</Window.Resources>
+</Grid.Resources>
 ...
 <TextBlock Text="{Binding ReleaseDateTime,
     Converter={StaticResource StringFormatterValueConverter},
