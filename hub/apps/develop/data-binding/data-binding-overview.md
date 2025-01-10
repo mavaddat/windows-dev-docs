@@ -1,13 +1,14 @@
 ---
 ms.assetid: 02a08657-285d-4804-a006-168c22aa4904
-title: Windows data binding overview
-description: This topic shows you how to bind a control (or other UI element) to a single item or bind an item's control to a collection of items in a Windows App SDK app.
+title: Windows data binding overview for developers
+description: This topic shows you how to bind a control (or other UI element) to a single item or bind an item's control to a collection of items in a WinUI app with Windows App SDK.
 ms.date: 01/10/2025
 ms.topic: concept-article
 keywords: windows 10, windows 11, windows app sdk, winui, windows ui
 ms.localizationpriority: medium
 dev_langs:
   - csharp
+# Customer intent: As a Windows developer, I want to learn how to bind a control to a single item or bind an item's control to a collection of items in a WinUI app.
 ---
 
 # Windows data binding overview
@@ -285,6 +286,6 @@ Here's the result.
 
 ![displaying a date with custom formatting](images/xaml-databinding5.png)
 
-## See also
+## Related content
 
-* [Data binding](index.md)
+- [Data binding](index.md)
