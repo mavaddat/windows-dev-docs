@@ -21,7 +21,6 @@ The following articles provide information about features available via WinRT AP
 
 | Article | Description |
 |---------|-------------|
-| [Audio, video, and camera](/windows/uwp/audio-video-camera/) | Learn about development scenarios that involve photos, videos, or audio in your apps. |
 | [Camera](./camera/camera.md) | Learn about how to use the camera or microphone to capture photos, video, or audio. |
 | [Media playback](/windows/uwp/audio-video-camera/media-playback/) | Learn about how to play back audio and video in your apps. |
 | [Visual layer](/windows/uwp/composition/visual-layer) | The Visual layer provides a high performance, retained-mode API for graphics, effects and animations, and is the foundation for all UI across Windows devices. |

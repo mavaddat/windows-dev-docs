@@ -72,7 +72,7 @@ items:
                 href: develop\camera\capture-device-controls-for-video-capture.md
               - name: Video stabilization effect for video capture
                 href: develop\camera\effects-for-video-capture.md
-              - name: Effects for analyzing camera frames
+              - name: Scene analysis for MediaCapture
                 href: develop\camera\scene-analysis-for-media-capture.md
               - name: Capture a photo sequence with VariablePhotoSequence
                 href: develop\camera\variable-photo-sequence.md
