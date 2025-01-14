@@ -27,7 +27,9 @@ sections:
     questions:
       - question: Where can I find a straightforward overview of Windows development technologies?
         answer: |
-          See [An overview of app development options](./index.md).
+          For a great review of today's options for Windows developers, watch the most recent [Windows Dev Chat](https://youtube.com/playlist?list=PLI_J2v67C23bxTffW4XewbUEAOfSVZkrk&si=uARk7gCetDMnrxkJ) episode, [Choosing your ideal dev platform](https://www.youtube.com/live/4PJBJ8GICjM?si=T1uu4Dm8UKdf6lGn), where they discuss WinUI, .NET MAUI, React Native, Blazor, and Progressive Web Apps (PWAs).
+
+          You can also refer to the [overview of app development options](./index.md) for Windows developers.
       - question: Why is client app development still crucial for modern digital transformation in the era of cloud services?
         answer: |
           In the age of cloud services, client app development remains a critical component of modern digital transformation. For developers, building client applications is essential not just for reach but for delivering responsive, meaningful interactions on user devices.
@@ -317,7 +319,14 @@ sections:
     questions:
       - question: Are UWP / WinUI 2 deprecated?
         answer: |
-          No. UWP and WinUI 2 are still supported and will receive bug, reliability, and security fixes. However, most new features and capabilities, including support for the latest .NET runtimes, will only be added to WinUI 3.
+          No. UWP and WinUI 2 are still supported and will receive bug, reliability, and security fixes. However, most new features and capabilities will only be added to WinUI 3.
+
+          > [!NOTE]
+          > UWP support for .NET 9 is available in preview. This preview support provides a path for UWP apps to modernize using the latest version of .NET.
+          >
+          > There are two main goals of the .NET 9 UWP support. First, it provides a better migration path for UWP developers who want to migrate to WinUI 3. Second, it enables developers to remove dependencies on .NET Native, so they can benefit from the latest .NET and C# features, no matter what their app model is.
+          > 
+          > For more information, see the [Modernize your UWP app with preview UWP support for .NET 9 and Native AOT](https://devblogs.microsoft.com/ifdef-windows/preview-uwp-support-for-dotnet-9-native-aot/) blog post.
       - question: When should I migrate a UWP / WinUI 2 app to WinUI 3?
         answer: |
           UWP developers should feel no pressure to migrate their apps to the WinUI 3, if they are happy with UWP and its feature set. The best choice for some apps may be to never migrate. 
@@ -328,10 +337,10 @@ sections:
           We recommend continuing to use UWP if you're building for Xbox, Surface Hub, or HoloLens.
       - question: Is WPF deprecated?
         answer: |
-          No. WPF is still supported and receives some feature updates as well.
+          No. WPF is still supported, recommended, and receives feature updates as well. See the [WPF roadmap on GitHub](https://github.com/dotnet/wpf/blob/main/roadmap.md).
       - question: Is WinForms deprecated?
         answer: |
-          No. WinForms is still supported and receives some feature updates as well.
+          No. WinForms is still supported and receives feature updates. See the [Windows Forms Roadmap on GitHub](https://github.com/dotnet/winforms/blob/main/docs/roadmap.md).
       - question: Is the Windows Runtime (WinRT) deprecated?
         answer: |
           No. [WinRT](/windows/uwp/winrt-components) refers to an application binary interface (ABI) that lets you interop between multiple languages. WinRT is the evolution of COM. Windows App SDK provides most of its functionality through WinRT APIs.
