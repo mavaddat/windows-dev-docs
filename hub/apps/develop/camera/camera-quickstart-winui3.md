@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 
 In this quickstart, you will learn how to create a basic WinUI 3 camera app that displays the camera preview. In a WinUI 3 app, you use the [MediaPlayerElement](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.mediaplayerelement) control in the [Microsot.UI.Xaml.Controls](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls) namespace to render the camera preview and the WinRT class [MediaCapture](/uwp/api/windows.media.capture.mediacapture) to access the device's camera preview stream. **MediaCapture** provides APIs for performing a wide range of camera-related tasks such as such as capturing photos and videos and configuring the camera's device driver. See the other articles in this section for details about other **MediaCapture** features.
 
-The code in this walkthrough is adapted from [TBD - Sample repo link]. 
+The code in this walkthrough is adapted from the [MediaCapture WinUI 3 sample on github](https://github.com/microsoft/Windows-Camera/tree/master/Samples/MediaCaptureWinUI3). 
 
 
 ## Prerequisites

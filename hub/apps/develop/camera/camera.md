@@ -37,6 +37,10 @@ This section provides guidance for creating WinUI 3 apps that use the camera or 
 | [Handle the Windows camera privacy setting](camera-privacy-setting.md) | Learn how apps should handle the Windows camera privacy setting. |
 | [Connect to remote cameras](connect-to-remote-cameras.md) | Learn how to connect to remote cameras and get a **MediaFrameSourceGroup** to retrieve frames from each camera. |
 
+## WinUI 3 samples for camera
+
+* [MediaCapture WinUI 3 sample on github](https://github.com/microsoft/Windows-Camera/tree/master/Samples/MediaCaptureWinUI3).
+
 ## UWP app samples for camera
 
 * [Camera face detection sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CameraFaceDetection)
