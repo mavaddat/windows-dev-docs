@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 This section provides guidance for creating Universal Windows Platform (UWP) apps that use the camera or microphone to capture photos, video, or audio.
 
 > [!NOTE]
-> Many articles in this section have been updated to support WinUI 3 apps and have been relocated to the [Develop Windows desktop apps](/windows/apps/develop/) area of the documentation. The camera-specific information in these updated articles is still applicable to UWP apps and continue to describe the recommended practices for using the camera in UWP apps. Articles about UWP-specific and legacy features remain in the UWP area of the documentation.
+> Many articles related to camera and media capture have been updated to support WinUI 3 apps and have been relocated to the [Develop Windows desktop apps](/windows/apps/develop/camera) area of the documentation. The camera-specific information in these updated articles is still applicable to UWP apps and continue to describe the recommended practices for using the camera in UWP apps. Articles about UWP-specific and legacy features remain here in the UWP area of the documentation.
 
 ## Use the Windows built-in camera UI
 
