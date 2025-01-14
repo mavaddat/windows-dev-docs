@@ -15,6 +15,8 @@ In this quickstart, you will learn how to create a basic WinUI 3 camera app that
 
 The code in this walkthrough is adapted from the [MediaCapture WinUI 3 sample on github](https://github.com/microsoft/Windows-Camera/tree/master/Samples/MediaCaptureWinUI3). 
 
+> [!TIP]
+> For the UWP version of this article, see [Display the camera preview](/windows/uwp/audio-video-camera/simple-camera-preview-access) in the UWP documentation.
 
 ## Prerequisites
 
