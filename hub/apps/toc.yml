@@ -329,6 +329,10 @@ items:
                   href: develop/widgets/implement-widget-provider-cs.md
                 - name: Implement a widget provider in a win32 app (C++/WinRT)
                   href: develop/widgets/implement-widget-provider-win32.md
+                - name: Web widget providers
+                  href: develop/widgets/web-widget-providers.md
+                - name: Customize the widget header area
+                  href: develop/widgets/widget-header-customization.md
                 - name: Widget provider package manifest XML format
                   href: develop/widgets/widget-provider-manifest.md
                 - name: Widget provider ActivateApplication protocol
