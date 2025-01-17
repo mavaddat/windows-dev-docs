@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 
 The TabView control is a way to display a set of tabs and their respective content. TabView controls are useful for displaying several pages (or documents) of content while letting a user rearrange, close, or open new tabs.
 
-![Example of a TabView](images/tabview/tab-introduction.png)
+:::image type="content" source="images/tabview/tab-introduction.png" alt-text="Example of a TabView":::
 
 ## Is this the right control?
 
@@ -111,11 +111,11 @@ For each TabViewItem, you can set a header and an icon, and specify whether the 
 
 - The [Header](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewitem.header) property is typically set to a string value that provides a descriptive label for the tab. However, the `Header` property can be any object. You can also use the [HeaderTemplate](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewitem.headertemplate) property to specify a [DataTemplate](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.datatemplate) that defines how bound header data should be displayed.
 - Set the [IconSource](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewitem.iconsource) property to specify an icon for the tab.
-- By default, the tab shows a close button. You can set the [IsClosable](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewitem.isclosable) property to `false` to ensure that a user can't close the tab.
+- By default, the tab shows a _close button_ (X). You can set the [IsClosable](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewitem.isclosable) property to `false` to hide the close button and ensure that a user can't close the tab. (If you close tabs in your app code outside of a _close requested_ event, you should first check that `IsClosable` is `true`.)
 
 For the TabView, you can configure several options that apply to all tabs.
 
-- By default, the _close button_ (X) is always shown for closable tabs. You can set the [CloseButtonOverlayMode](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabview.closebuttonoverlaymode) property to `OnPointerOver` to change this behavior. In this case, the selected tab always shows the close button if it is closable, but unselected tabs show the close button only when the tab is closable and the user has their pointer over it.
+- By default, the close button is always shown for closable tabs. You can set the [CloseButtonOverlayMode](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabview.closebuttonoverlaymode) property to `OnPointerOver` to change this behavior. In this case, the selected tab always shows the close button if it is closable, but unselected tabs show the close button only when the tab is closable and the user has their pointer over it.
 - You can set the [TabWidthMode](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabview.tabwidthmode) property to change how tabs are sized. (The `Width` property is ignored on `TabViewItem`.) These are the options in the [TabViewWidthMode](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabviewwidthmode) enumeration:
   - `Equal` - Each tab has the same width. This is the default.
   - `SizeToContent` - Each tab adjusts its width to the content within the tab.
@@ -225,15 +225,17 @@ private void TabView_TabCloseRequested(TabView sender,
 
 If all tabs in your app are closeable and your app window should close when the last tab is closed, you should also close the window in the [TabCloseRequested](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.tabview.tabcloserequested) event handler.
 
-First, in the `App.xaml.cs` file, add a public property that will let you access the `Window` instance from the `Page` that hosts the TabView.
+First, in the `App.xaml.cs` file, add a `public static` property that will let you access the `Window` instance from the `Page` that hosts the TabView. (See [User interface migration](../../windows-app-sdk/migrate-to-windows-app-sdk/guides/winui3.md#change-windowsuixamlwindowcurrent-to-appwindow).)
 
 ```csharp App.xaml.cs
 public partial class App : Application
 {
     // ... code removed.
 
-    public Window? Window => m_window; // Add this.
-    private Window? m_window;
+    // Add this.
+    public static Window Window { get { return m_window; } }
+    // Update this to make it static.
+    private static Window m_window;
 }
 ```
 
@@ -249,8 +251,7 @@ private void TabView_TabCloseRequested(TabView sender,
 
     if (sender.TabItems.Count == 0)
     {
-        var window = (Application.Current as App)?.Window as MainWindow;
-        window?.Close();
+        App.Window.Close();
     }
 }
 ```
@@ -486,7 +487,7 @@ Because a user can drag a window by its title bar to reposition the Window, it i
 
 For more information, see [Title bar customization](../../develop/title-bar.md)
 
-![Tabs in title bar](images/tabview/tab-extend-to-title.png)
+:::image type="content" source="images/tabview/tab-extend-to-title.png" alt-text="Tabs in title bar":::
 
 ```xaml
 <TabView VerticalAlignment="Stretch">
@@ -505,15 +506,14 @@ For more information, see [Title bar customization](../../develop/title-bar.md)
 ```csharp
 private void MainPage_Loaded(object sender, RoutedEventArgs e)
 {
-    var currentWindow = (Application.Current as App)?.Window as MainWindow;
-    currentWindow.ExtendsContentIntoTitleBar = true;
-    currentWindow.SetTitleBar(CustomDragRegion);
+    App.Window.ExtendsContentIntoTitleBar = true;
+    App.Window.SetTitleBar(CustomDragRegion);
     CustomDragRegion.MinWidth = 188;
 }
 ```
 
 > [!NOTE]
-> How you get a reference to the window (`currentWindow`) may vary depending on how you track windows in your app. For more information, see [Close the window when the last tab is closed](#close-the-window-when-the-last-tab-is-closed) and [Create and track a new window](#create-and-track-a-new-window) in this article.
+> How you get a reference to the window may vary depending on how you track windows in your app. For more information, see [Close the window when the last tab is closed](#close-the-window-when-the-last-tab-is-closed) and [Create and track a new window](#create-and-track-a-new-window) in this article.
 
 ## Keyboard guidance for developers
 
@@ -573,7 +573,7 @@ private void NewTabKeyboardAccelerator_Invoked(KeyboardAccelerator sender,
 {
     // Create new tab.
     TabView senderTabView = (TabView)args.Element;
-    if (senderTabView != null)
+    if (senderTabView is not null)
     {
         // (Click handler defined in previous example.)
         TabView_AddTabButtonClick(senderTabView, new EventArgs());
@@ -586,14 +586,27 @@ private void CloseSelectedTabKeyboardAccelerator_Invoked(KeyboardAccelerator sen
 {
     TabView tabView = (TabView)args.Element;
     TabViewItem tab = (TabViewItem)tabView.SelectedItem;
-    // Only remove the selected tab if it can be closed.
-    if (tabView is not null &&
-        tab.IsClosable == true)
+    if (tab is not null)
     {
-        tabView.TabItems.Remove(tab);
+        CloseSelectedTab(tabView, tab);
     }
     args.Handled = true;
 }
+
+private void TabView_TabCloseRequested(TabView sender, TabViewTabCloseRequestedEventArgs args)
+{
+    CloseSelectedTab(sender, args.Tab);
+}
+
+private void CloseSelectedTab(TabView tabView, TabViewItem tab)
+{
+    // Only remove the selected tab if it can be closed.
+    if (tab.IsClosable == true)
+    {
+        tabView.TabItems.Remove(tab);
+    }
+}
+
 
 private void NavigateToNumberedTabKeyboardAccelerator_Invoked(KeyboardAccelerator sender,
                                                      KeyboardAcceleratorInvokedEventArgs args)
