@@ -312,7 +312,7 @@ The currently available utilities include:
         [![Workspaces screenshot](../images/powertoys-workspaces/workspaces_editor.png)](workspaces.md)
     :::column-end:::
     :::column span="2":::
-        [Workspaces](workspaces.md) is a desktop manager utility for launching a set of applications to custom positions and configurations with a single click. Open the editor using by selecting "Launch editor" from settings or by using the shortcut <kbd>⊞ Win</kbd>+<kbd>Ctrl</kbd>+<kbd>`</kbd>.
+        [Workspaces](workspaces.md) is a desktop manager utility for launching a set of applications to custom positions and configurations with a single click. Open the editor by selecting "Launch editor" from settings or by using the shortcut <kbd>⊞ Win</kbd>+<kbd>Ctrl</kbd>+<kbd>`</kbd>.
     :::column-end:::
 :::row-end:::
 
