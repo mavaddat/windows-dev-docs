@@ -72,9 +72,9 @@ The following examples show how the `Compact` style can be applied for the page 
 </Grid>
 ```
 
-## Sizing in Windows 10
+## Sizing in Windows apps
 
-For the Windows 10 October 2018 Update (version 1809), the standard, default size for all Windows XAML controls was decreased to increase usability across all usage scenarios.
+In the Windows 10 October 2018 Update (version 1809 and later), the standard, default size for all Windows XAML controls was decreased to increase usability across all usage scenarios.
 
 The following image shows some of the control layout changes that were introduced with the Windows 10 October 2018 Update. Specifically, the margin between a header and the top of a control was decreased from 8epx to 4epx, and the 44epx grid was changed to a 40epx grid.
 
