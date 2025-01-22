@@ -13,7 +13,7 @@ ZoomIt is a screen zoom, annotation, and recording tool for technical presentati
 
 :::image type="content" source="../images/powertoys-zoomit.gif" alt-text="Animation of the PowerToys ZoomIt utility by Sysinternals":::
 
-ZoomIt is one of the [Sysinternals](/sysinternals/) utilities and its standalone version works all versions of Windows. For more information or to download a standalone version, see [ZoomIt](/sysinternals/downloads/zoomit) in the Sysinternals documentation.
+ZoomIt is one of the [Sysinternals](/sysinternals/) utilities and its standalone version works all versions of Windows. To provide the most flexibility, this standalone version will continue to be available from Sysinternals. For more information or to download a standalone version, see [ZoomIt](/sysinternals/downloads/zoomit) in the Sysinternals documentation.
 
 ## Enabling
 
