@@ -1,7 +1,7 @@
 ---
 title: ZoomIt utility by Sysinternals
 description: The ZoomIt utility by Sysinternals, now available with PowerToys, is a screen zoom, annotation, and recording tool for technical presentations and demos.
-ms.date: 12/05/2024
+ms.date: 01/22/2025
 ms.topic: concept-article
 no-loc: [PowerToys, Windows, Win]
 #Customer intent: As a Windows power user, I want to learn about the ZoomIt utility by Sysinternals, which is now available with PowerToys.
