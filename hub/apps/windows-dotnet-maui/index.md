@@ -1,10 +1,11 @@
 ---
 title: Build Windows apps with .NET MAUI
 description: Learn about .NET MAUI, benefits it provides to Windows developers, and how take your Windows apps cross-platform.
-ms.topic: article
-ms.date: 05/09/2024
+ms.topic: concept-article
+ms.date: 01/23/2025
 keywords: windows win32, desktop development, Windows App SDK, .net maui
 ms.localizationpriority: medium
+#Customer intent: As a Windows developer, I want to learn about .NET MAUI, the benefits it provides to Windows developers, and how to take my Windows apps cross-platform.
 ---
 
 # Build Windows apps with .NET MAUI
@@ -27,6 +28,9 @@ If you are planning to build a new app for Windows and want to target additional
 - **Familiarity**: .NET MAUI XAML and Windows App SDK XAML have some differences. If you are comfortable with XAML in UWP and Windows App SDK, you will have a bit of a learning curve with the .NET MAUI controls and XAML syntax.
 - **Native Controls**: .NET MAUI does not currently support using Windows App SDK controls. If you have existing controls from other Windows App SDK projects you intend to re-use or rely on 3rd Party or open source controls, you will need to find alternatives for .NET MAUI projects.
 - **Closer to Windows**: When writing .NET MAUI apps, it outputs a Windows App SDK app, but there is some translation to get from your code to the native Windows app. With Windows App SDK, you are eliminating that translation step and are less likely to encounter issues with styles, API compatibility, or layout.
+
+> [!TIP]
+> Are you still deciding between .NET MAUI, WinUI, and other UI framework options? Check out the [Windows developer FAQ](../get-started/windows-developer-faq.yml) to learn about the different options for building native Windows apps. Then go watch the **Windows Dev Chat** episode on **Choosing your ideal dev platform**. The segment about [.NET MAUI](https://www.youtube.com/watch?v=4PJBJ8GICjM&list=PLI_J2v67C23bxTffW4XewbUEAOfSVZkrk&index=2&t=2193s) hosted by Beth Massi walks through examples and reasons for choosing .NET MAUI for your next app.
 
 ## .NET MAUI resources for Windows developers
 
@@ -82,12 +86,10 @@ If you haven't enabled development mode on your PC, see [Enable your device for 
 
 Check out a walk-through of [creating your first .NET MAUI app on Windows](./walkthrough-first-app.md).
 
-## Related topics
+## Related content
 
 [What is .NET MAUI](/dotnet/maui/what-is-maui)
 
-[.NET MAUI supported platforms](/dotnet/maui/supported-platforms)
-
-[WinUI overview](../winui/winui3/index.md)
+[Windows developer FAQ](../get-started/windows-developer-faq.yml)
 
 [.NET MAUI Community Toolkit documentation](/dotnet/communitytoolkit/maui/)
