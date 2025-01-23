@@ -49,7 +49,7 @@ This [one-day live stream](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWeP
 ### .NET MAUI blog posts
 
 - [5 .NET MAUI Features for Building Great Desktop Apps](https://devblogs.microsoft.com/dotnet/5-dotnet-maui-desktop-features/)
-- [Build Your Own Podcast App with .NET 7, Blazor, and .NET MAUI](https://devblogs.microsoft.com/dotnet/build-your-own-podcast-app-with-dotnet-blazor-and-dotnet-maui/)
+- [Build Your Own Podcast App with .NET, Blazor, and .NET MAUI](https://devblogs.microsoft.com/dotnet/build-your-own-podcast-app-with-dotnet-blazor-and-dotnet-maui/)
 
 ### GitHub
 
