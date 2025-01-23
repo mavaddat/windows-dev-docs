@@ -113,7 +113,7 @@ Now that you have your first .NET MAUI app running on Windows, let's add some MV
 
 1. Open the **MainPage.xaml.cs** file for editing and remove the `OnCounterClicked` method and the `count` field.
 
-1. Add the following code to the `MainPage` constructor after the call to `InitializeComponenent()`. This code will receive the message sent by `IncrementCounter()` in the `MainViewModel` and will update the `CounterBtn.Text` property with the new message and announce the new text with the `SemanticScreenReader`:
+1. Add the following code to the `MainPage` constructor after the call to `InitializeComponent()`. This code will receive the message sent by `IncrementCounter()` in the `MainViewModel` and will update the `CounterBtn.Text` property with the new message and announce the new text with the `SemanticScreenReader`:
 
     ``` csharp
     WeakReferenceMessenger.Default.Register<CountChangedMessage>(this, (r, m) =>
