@@ -99,11 +99,8 @@ Now that you have your first .NET MAUI app running on Windows, let's add some MV
             {
                 count++;
     
-                message = $"Clicked {count} time";
-
                 // Pluralize the message if the count is greater than 1
-                if (count > 1)
-                    message += "s";
+                message = count == 1 ? $"Clicked {count} time" : $"Clicked {count} times";
     
                 WeakReferenceMessenger.Default.Send(new CountChangedMessage(message));
             }
