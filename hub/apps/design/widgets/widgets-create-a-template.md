@@ -45,7 +45,7 @@ The third text editor is labeled **Sample Host Data Editor**. Note that this edi
 | host.isUserContextAuthenticated | true or false | When this value is false, the only action that is supported is [Action.OpenUrl](https://adaptivecards.io/explorer/Action.OpenUrl.html). The value of *isUserContextAuthenticated* can be used to adjust widget content appropriately, given the interactivity limitations. |
 
 
-such as the Widgets Board two properties that indicate the size and theme of your widget. These properties are named *host.widgetSize* and *host.hostTheme*. The supported sizes are "small", "medium", and "large". The supported themes are "light" and "dark". Your widget template can dynamically display different content based on the current value of these properties. To see how your widget responds to changes in size and theme, you can adjust the values for these properties in the editor, or you can also set these values in the **Container size** and **Theme** dropdowns next to the **Select host app** dropdown at the top of the page. 
+The **Container size** and **Theme** dropdowns next to the **Select host app** dropdown at the top of the page allow you to set these properties without manually editing the sample host JSON in the editor.
 
 ## Create a new card
 
@@ -168,5 +168,54 @@ The following code listing shows the final version of the JSON payload.
       "verb": "inc"
     }
   ]
+}
+```
+
+## Settings payload example
+
+The following code listing shows a simple example of a JSON payload that uses the **host.isSettingsPayload** property to display different 
+content when the user has clicked the **Customize widget** button. 
+
+```json
+{
+    "type": "AdaptiveCard",
+    "body": [
+    {
+        "type": "Container",
+        "items":[
+            {
+                "type": "TextBlock",
+                "text": "Content payload",
+                "$when": "${!$host.isSettingsPayload}"
+            }
+        ]
+    },
+    {
+        "type": "Container",
+        "items":[
+            {
+                "type": "TextBlock",
+                "text": "Settings payload",
+                "$when": "${$host.isSettingsPayload}"
+            }
+        ]
+    }
+],
+"actions": [
+    {
+    "type": "Action.Submit",
+    "title": "Increment",
+    "verb": "inc",
+    "$when": "${!$host.isSettingsPayload}"
+    },
+    {
+    "type": "Action.Submit",
+    "title": "Update Setting",
+    "verb": "setting",
+    "$when": "${$host.isSettingsPayload}"
+    }
+],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.6"
 }
 ```
