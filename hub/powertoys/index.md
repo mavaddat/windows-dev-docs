@@ -294,17 +294,6 @@ The currently available utilities include:
     :::column-end:::
 :::row-end:::
 
-### Video Conference Mute
-
-:::row:::
-    :::column:::
-        [![Video Conference Mute screenshot](../images/pt-video-conference-mute.png)](video-conference-mute.md)
-    :::column-end:::
-    :::column span="2":::
-        [Video Conference Mute](video-conference-mute.md) is a quick way to globally "mute" both your microphone and camera using <kbd>⊞ Win</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> while on a conference call, regardless of the application that currently has focus.
-    :::column-end:::
-:::row-end:::
-
 ### Workspaces
 
 :::row:::
@@ -367,3 +356,18 @@ PowerToys is a rapid-incubation, open source team aimed at providing power users
 
 - [New specs for possible PowerToys](https://github.com/microsoft/PowerToys/wiki/Specs)
 - [Backlog priority list](https://github.com/microsoft/PowerToys/wiki/Roadmap#backlog-priority-list-in-order)
+
+## Deprecated PowerToy utilities
+
+These utilities have been deprecated and removed from PowerToys:
+
+### Video Conference Mute (Deprecated and removed on PowerToys 0.88)
+
+:::row:::
+    :::column:::
+        [![Video Conference Mute screenshot](../images/pt-video-conference-mute.png)](video-conference-mute.md)
+    :::column-end:::
+    :::column span="2":::
+        [Video Conference Mute](video-conference-mute.md) is a quick way to globally "mute" both your microphone and camera using <kbd>⊞ Win</kbd>+<kbd>Shift</kbd>+<kbd>Q</kbd> while on a conference call, regardless of the application that currently has focus.
+    :::column-end:::
+:::row-end:::
