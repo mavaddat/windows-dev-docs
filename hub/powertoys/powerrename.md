@@ -21,7 +21,7 @@ PowerRename is a bulk renaming tool that enables you to:
 - Undo a rename operation after it is completed.
 
 > [!TIP]
-> You can use AI assistance to [create regular expressions to use in PowerRename with GitHub Copilot](#ask-microsoft-copilot-for-help-with-regular-expressions).
+> You can use AI assistance to [create regular expressions to use in PowerRename with Copilot](#ask-copilot-for-help-with-regular-expressions).
 
 ## Demo
 
@@ -210,7 +210,7 @@ Matching and variable examples. Capturing groups are defined in parentheses `()`
 | `^(.{n})(.*)` or `(.*)(.{n})$`                          | `$1foo$2`    | Insert "foo" *n* characters from the beginning or the end, respectively              |
 | `^.{n}` or `.{n}$`                                      | nothing      | Trim *n* characters from the beginning or the end, respectively                      |
 
-### Ask Microsoft Copilot for help with regular expressions
+### Ask Copilot for help with regular expressions
 
 You can get AI assistance from [Copilot](https://copilot.microsoft.com/) to generate simple or complex regular expressions. You can customize the prompt to generate a string per your requirements.
 
