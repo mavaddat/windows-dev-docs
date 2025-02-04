@@ -20,6 +20,9 @@ PowerRename is a bulk renaming tool that enables you to:
 - Check the expected rename results in a preview window before finalizing a bulk rename.
 - Undo a rename operation after it is completed.
 
+> [!TIP]
+> You can use AI assistance to [create regular expressions to use in PowerRename with GitHub Copilot](#ask-microsoft-copilot-for-help-with-regular-expressions).
+
 ## Demo
 
 In this demo, all instances of the file name "foo" are replaced with "foobar". Since all the files are uniquely named, this would have taken a long time to complete manually one-by-one. PowerRename enables a single bulk rename. Notice that the Explorer's "Undo Rename" (Ctrl+Z) command makes it possible to undo the last change.
@@ -215,12 +218,6 @@ The following text shows an example prompt for Copilot:
 
 ```copilot-prompt
 Generate a regular expression to match a string that starts with "foo" and ends with "bar" and has at least six letters and two numeric characters in between them.
-```
-
-Copilot will generate a regular expression similar to the following:
-
-```
-^foo(?=[A-Za-z0-9]{8,}bar$)(?=(.*\d){2})[A-Za-z0-9]*bar$
 ```
 
 Copilot is powered by AI, so surprises and mistakes are possible. For more information, see [Copilot FAQs](https://www.microsoft.com/microsoft-copilot/learn/).
