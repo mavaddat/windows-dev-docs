@@ -147,7 +147,7 @@ protected override void OnActivated(IActivatedEventArgs e)
 > [!IMPORTANT]
 > Make sure to replace the final `if (rootFrame.Content == null)` logic with `rootFrame.Navigate(deepLinkPageType, e);` as shown in the example above.
 
-## Test it out: Local validation tool
+## Test in a local validation tool
 
 You can test the configuration of your app and website by running the App host registration verifier tool which is available in:
 

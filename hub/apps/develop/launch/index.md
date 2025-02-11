@@ -1,16 +1,20 @@
 ---
-title: Launch a Windows app with a URI
-description: This section describes how to use a Uniform Resource Identifier (URI) to launch one Windows app from another app.
+title: Launching Windows apps and managing background tasks
+description: Learn how to use a Uniform Resource Identifier (URI) or a file type to launch a Windows app or manage background tasks in your apps.
 ms.date: 02/11/2025
 ms.topic: concept-article
 keywords: windows, uwp, winrt, winui, windows 11, windows 10
 ms.localizationpriority: medium
-# customer-intent: As a Windows developer, I want to learn how to use a Uniform Resource Identifier (URI) to launch one Windows app from another app.
+# customer-intent: As a Windows developer, I want to learn how to use a URI or a file type to launch a Windows app or manage background tasks in my apps.
 ---
 
-# Launch a Windows app with a URI
+# Launching Windows apps and managing background tasks
 
-This section describes how to use a Uniform Resource Identifier (URI) to launch one Windows app from another app, enabling helpful app-to-app scenarios.
+Learn how to use a Uniform Resource Identifier (URI) or a file type to launch a Windows app or manage background tasks in your apps.
+
+## Launch a Windows app with a URI
+
+This section describes how to use a URI to launch your Windows app.
 
 | Topic | Description |
 |-------|-------------|
@@ -23,6 +27,23 @@ This section describes how to use a Uniform Resource Identifier (URI) to launch 
 | [Launch the People app](launch-people-app.md) | This topic describes the ms-people URI scheme. Your app can use this URI scheme to launch the People app for specific actions. |
 | [Launch screen snipping](launch-screen-snipping.md) | Learn how to use URI schemes to open a new snip, or to open the Snip & Sketch app. |
 | [Enable apps for websites using app URI handlers](web-to-app-linking.md) | Drive user engagement with your app by supporting the Apps for Websites feature. |
+
+## Launch a Windows app through file activation
+
+This section shows how to set up your app to launch when a file of a certain type is opened.
+
+| Topic | Description |
+|-------|-------------|
+| [Launch the default app for a file](launch-the-default-app-for-a-file.md) | Learn how to launch the default app for a file. |
+| [Handle file activation](handle-file-activation.md) | Learn how to register your app to become the default handler for a certain file type. |
+
+## Manage background tasks in your app
+
+This section describes how to manage background tasks in your app.
+
+| Topic | Description |
+|-------|-------------|
+| [Working with background tasks in Windows apps](create-and-register-a-background-task.md) | Learn how to create and register a background task in your app with the Windows Runtime (WinRT) [BackgroundTaskBuilder](/uwp/api/windows.applicationmodel.background.backgroundtaskbuilder) class. |
 
 ## Related content
 

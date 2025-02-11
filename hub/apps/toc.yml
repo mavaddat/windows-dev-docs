@@ -236,6 +236,8 @@ items:
               href: develop/launch/reserved-uri-scheme-names.md
             - name: Support web-to-app linking with app URI handlers
               href: develop/launch/web-to-app-linking.md
+            - name: Working with background tasks in Windows apps
+              href: develop/launch/create-and-register-a-background-task.md
         - name: Notifications
           items: 
             - name: Push notifications
