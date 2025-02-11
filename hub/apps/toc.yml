@@ -212,8 +212,12 @@ items:
           items:
             - name: Overview
               href: develop/launch/index.md
+            - name: Handle file activation
+              href: develop/launch/handle-file-activation.md
             - name: Handle URI activation
               href: develop/launch/handle-uri-activation.md
+            - name: Launch screen snipping
+              href: develop/launch/launch-screen-snipping.md
             - name: Launch the default app for a URI
               href: develop/launch/launch-default-app.md
             - name: Launch the Default Apps settings page
