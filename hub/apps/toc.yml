@@ -208,6 +208,20 @@ items:
                       href: develop/win2d/avoiding-memory-leaks.md
                     - name: Custom effects
                       href: develop/win2d/custom-effects.md
+        - name: Launching and background tasks
+          items:
+            - name: Overview
+              href: develop/launch/index.md
+            - name: Handle URI activation
+              href: develop/launch/handle-uri-activation.md
+            - name: Launch the default app for a URI
+              href: develop/launch/launch-default-app.md
+            - name: Launch the Default Apps settings page
+              href: develop/launch/launch-default-apps-settings.md
+            - name: Launch the Windows Settings app
+              href: develop/launch/launch-settings-app.md
+            - name: Reserved file and URI scheme names
+              href: develop/launch/reserved-uri-scheme-names.md
         - name: Notifications
           items: 
             - name: Push notifications
