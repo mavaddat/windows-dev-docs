@@ -218,10 +218,18 @@ items:
               href: develop/launch/launch-default-app.md
             - name: Launch the Default Apps settings page
               href: develop/launch/launch-default-apps-settings.md
+            - name: Launch the Microsoft Store app
+              href: develop/launch/launch-store-app.md
+            - name: Launch the People app
+              href: develop/launch/launch-people-app.md
+            - name: Launch the Windows Maps app
+              href: develop/launch/launch-maps-app.md
             - name: Launch the Windows Settings app
               href: develop/launch/launch-settings-app.md
             - name: Reserved file and URI scheme names
               href: develop/launch/reserved-uri-scheme-names.md
+            - name: Launch the Microsoft Store app
+              href: develop/launch/launch-store-app.md
         - name: Notifications
           items: 
             - name: Push notifications

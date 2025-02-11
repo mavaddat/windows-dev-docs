@@ -183,7 +183,7 @@ Use the **ms-chat:** URI scheme to launch the Microsoft Messaging app.
 ### People app URI scheme
 
 Use the **ms-people:** URI scheme to launch the People app.
-For more info, see [Launch the People app](launch-people-apps.md).
+For more info, see [Launch the People app](launch-people-app.md).
 
 > [!IMPORTANT]
 > The People app is moving to the new Outlook. You can take your contacts with you by selecting **Export contacts** on the People app's toolbar and then importing them into the new Outlook. See [Manage your contacts and connect with people through the new Outlook for Windows (Preview)](https://support.microsoft.com/windows/manage-your-contacts-and-connect-with-people-through-the-new-outlook-for-windows-preview-858a75e9-f61c-4fe2-b744-a8f45c84c7bf) for more information.
