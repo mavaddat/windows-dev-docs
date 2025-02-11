@@ -279,7 +279,7 @@ public async void ReduceBackgroundCostPreemptively()
 } 
 ```
 
-## Additional remarks
+## Background tasks and network connectivity
 
 If your background task requires network connectivity, be aware of the following considerations.
 
