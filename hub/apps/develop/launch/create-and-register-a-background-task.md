@@ -65,7 +65,12 @@ The `RegisterBackgroundTaskWithSystem` method creates a new instance of the `Bac
 
 ## Handle modern standby in a background task
 
-The following example shows how to handle modern standby in a background task. It shows how an app developer can use the **BackgroundTaskBuilder** API to register at most one task with the specified task name. The sample also shows how to check and opt in the task registration to run in modern standby for the application's most critical tasks.
+The **BackgroundTaskBuilder** and related APIs already allow packaged desktop applications to run background tasks. The API now extends these APIs to enable these appls to execute code in modern standby. The update also adds properties that can be queried by an app to determine if the system will throttle background tasks for the application in modern standby to conserve battery life. This enables scenarios like apps receiving VoIP calls or other push notifications from modern standby.
+
+> [!NOTE]
+> "Packaged desktop applications" in this section refers to Win32 applications that have package identity (i.e., are Desktop Bridge or Sparse Signed Packaged applications) and have a main (or wmain) function as their entry point.
+
+The following example shows how an app developer can use the **BackgroundTaskBuilder** API to register at most one task with the specified task name. The sample also shows how to check and opt in the task registration to run in modern standby for the application's most critical tasks.
 
 ```csharp
 // The following namespace is required for BackgroundTaskBuilder APIs. 
