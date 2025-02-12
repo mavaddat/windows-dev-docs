@@ -23,11 +23,9 @@ URI schemes let you open apps by clicking hyperlinks (or programmatically, in yo
 - The **ms-drive-to:** URI provides turn-by-turn driving directions from your current location.
 - The **ms-walk-to:** URI provides turn-by-turn walking directions from your current location.
 
-For example, the following URI opens the Windows Maps app and displays a map centered over New York City.
+For example, the following URI opens the Windows Maps app and displays a map centered over New York City:
 
-```xml
-<bingmaps:?cp=40.726966~-74.006076>
-```
+`bingmaps:?cp=40.726966~-74.006076`
 
 ![a map centered over new york city.](images/mapnyc.png)
 

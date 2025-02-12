@@ -37,7 +37,7 @@ In the following example, `LaunchUriAsync` is called to launch the Windows S
 ```csharp
 private async void LaunchSettingsPage_Click(object sender, RoutedEventArgs e)
 {
-    bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings:defaultapps?registeredAppMachine=" + Uri.EscapeDataString(("Microsoft Edge")));
+    bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-settings:defaultapps?registeredAppMachine=" + Uri.EscapeDataString("Microsoft Edge")));
 }
 ```
 

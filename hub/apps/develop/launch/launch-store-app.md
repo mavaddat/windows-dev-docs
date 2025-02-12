@@ -33,22 +33,22 @@ You can launch the Store directly to the product detail page (PDP) for a specifi
 
 Starting with the October 2021 update to the Store app, there are two modes available for displaying the PDP. By default the Store app is opened to the product detail page. You can also launch the store into with a popup experience that displays a smaller PDP dialog with that only displays the essential details for your app and a single action button for users. For the popup experience, you can optionally specify the location of a window that the dialog should be centered above.
 
-| URI Scheme                                                          | Description | Notes |
-|---------------------------------------------------------------------|-------------|-------|
-| ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL                      | Launches the full product details page (PDP) for a product | This is the recommended way to link to a specific product. |
-| ms-windows-store://pdp/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe | Launches the full product details page (PDP) for a product | Using the package family name is deprecated. |
-| ms-windows-store://pdp/?AppId=00001111-aaaa-2222-bbbb-3333cccc4444  | Launches the full product details page (PDP) for a product | Using the App ID is deprecated. |
-| ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL&mode=mini            | Launches the popup Store dialog experience | The popup experience only supports Product ID |
+| URI Scheme                                                         | Description | Notes |
+|--------------------------------------------------------------------|-------------|-------|
+| ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL                     | Launches the full product details page (PDP) for a product | This is the recommended way to link to a specific product. |
+| ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe | Launches the full product details page (PDP) for a product | Using the package family name is deprecated. |
+| ms-windows-store://pdp/?AppId=00001111-aaaa-2222-bbbb-3333cccc4444 | Launches the full product details page (PDP) for a product | Using the App ID is deprecated. |
+| ms-windows-store://pdp/?ProductId=9WZDNCRFHVJL&mode=mini           | Launches the popup Store dialog experience | The popup experience only supports Product ID |
 
 ## Launching the rating and review experience for a product
 
 To enable users to review your app, you can link to that PDP and launch directly into the rating and review dialog. Store ID is the recommended method to launch the Store app to a specific product detail page.
 
-| URI Scheme                                                             | Description | Notes |
-|------------------------------------------------------------------------|-------------|-------|
-| ms-windows-store://review/?ProductId=9WZDNCRFHVJL                      | Launches the write a review experience for a product. | Using StoreId is recommended |
-| ms-windows-store://review/?PFN= Microsoft.Office.OneNote_8wekyb3d8bbwe | Launches the write a review experience for a product. | Using product family name is deprecated. |
-| ms-windows-store://review/?AppId=11112222-bbbb-3333-cccc-4444dddd5555  | Launches the write a review experience for a product. | Using productid is deprecated |
+| URI Scheme                                                            | Description | Notes |
+|-----------------------------------------------------------------------|-------------|-------|
+| ms-windows-store://review/?ProductId=9WZDNCRFHVJL                     | Launches the write a review experience for a product. | Using StoreId is recommended |
+| ms-windows-store://review/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe | Launches the write a review experience for a product. | Using product family name is deprecated. |
+| ms-windows-store://review/?AppId=11112222-bbbb-3333-cccc-4444dddd5555 | Launches the write a review experience for a product. | Using productid is deprecated |
 
 ## Searching the Store
 
