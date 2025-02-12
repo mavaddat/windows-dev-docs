@@ -227,7 +227,7 @@ The syntax for each parameter in this table is shown by using Augmented Backus�
 </ul>
 <p>In Windows 10, the aerial view and 3D view styles are the same.</p>
 <div class="alert">
-<b>Note</b>  Omitting the <b>sty</b> parameter produces the same results as sty=r.
+<b>Note</b>  Omitting the <b>sty</b> parameter produce the same results as sty=r.
 </div>
 <div>
 
