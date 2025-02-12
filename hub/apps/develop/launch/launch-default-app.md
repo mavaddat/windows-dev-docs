@@ -56,10 +56,10 @@ First create a [System.Uri](/dotnet/api/system.uri) object to represent the URI,
 private async void launchURI_Click(object sender, RoutedEventArgs e)
 {
    // The URI to launch
-   var uriBing = new Uri(@"http://www.bing.com");
+   var bingUri = new Uri(@"https://www.bing.com");
 
    // Launch the URI
-   var success = await Windows.System.Launcher.LaunchUriAsync(uriBing);
+   var success = await Windows.System.Launcher.LaunchUriAsync(bingUri);
 
    if (success)
    {

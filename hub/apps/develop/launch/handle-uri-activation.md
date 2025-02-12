@@ -97,17 +97,6 @@ public partial class App
 }
 ```
 
-```vb
-Protected Overrides Sub OnActivated(ByVal args As Windows.ApplicationModel.Activation.IActivatedEventArgs)
-   If args.Kind = ActivationKind.Protocol Then
-      ProtocolActivatedEventArgs eventArgs = args As ProtocolActivatedEventArgs
-      
-      ' TODO: Handle URI activation
-      ' The received URI is eventArgs.Uri.AbsoluteUri
- End If
-End Sub
-```
-
 ```cppwinrt
 void App::OnActivated(Windows::ApplicationModel::Activation::IActivatedEventArgs const& args)
 {
