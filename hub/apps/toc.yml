@@ -967,8 +967,6 @@ items:
                   href: get-started/sign-up.md
                 - name: Install tools for the Windows App SDK
                   href: windows-app-sdk/set-up-your-development-environment.md
-                - name: Install tools for preview and experimental channels of the Windows App SDK
-                  href: windows-app-sdk/preview-experimental-install.md
                 - name: Latest Windows App SDK downloads
                   href: windows-app-sdk/downloads.md
                 - name: Archive of Windows App SDK downloads
