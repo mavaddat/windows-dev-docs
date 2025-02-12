@@ -68,7 +68,7 @@ The app receives activation events only for the URI scheme names listed in the p
           </Extensions>
           ...
         </Application>
-   <Applications>
+   </Applications>
 ```
 
 ## Step 2: Add the proper icons
