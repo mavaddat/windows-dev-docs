@@ -208,36 +208,42 @@ items:
                       href: develop/win2d/avoiding-memory-leaks.md
                     - name: Custom effects
                       href: develop/win2d/custom-effects.md
-        - name: Launching and background tasks
+        - name: Launching apps and background tasks
           items:
             - name: Overview
               href: develop/launch/index.md
-            - name: Handle file activation
-              href: develop/launch/handle-file-activation.md
-            - name: Handle URI activation
-              href: develop/launch/handle-uri-activation.md
-            - name: Launch screen snipping
-              href: develop/launch/launch-screen-snipping.md
-            - name: Launch the default app for a file
-              href: develop/launch/launch-the-default-app-for-a-file.md
-            - name: Launch the default app for a URI
-              href: develop/launch/launch-default-app.md
-            - name: Launch the Default Apps settings page
-              href: develop/launch/launch-default-apps-settings.md
-            - name: Launch the Microsoft Store app
-              href: develop/launch/launch-store-app.md
-            - name: Launch the People app
-              href: develop/launch/launch-people-app.md
-            - name: Launch the Windows Maps app
-              href: develop/launch/launch-maps-app.md
-            - name: Launch the Windows Settings app
-              href: develop/launch/launch-settings-app.md
+            - name: URI activation
+              items:
+              - name: Handle URI activation
+                href: develop/launch/handle-uri-activation.md
+              - name: Launch the default app for a URI
+                href: develop/launch/launch-default-app.md
+              - name: Launch the Windows Settings app
+                href: develop/launch/launch-settings-app.md
+              - name: Launch the Default Apps settings page
+                href: develop/launch/launch-default-apps-settings.md
+              - name: Launch the Microsoft Store app
+                href: develop/launch/launch-store-app.md
+              - name: Launch the Windows Maps app
+                href: develop/launch/launch-maps-app.md
+              - name: Launch screen snipping
+                href: develop/launch/launch-screen-snipping.md
+              - name: Launch the People app
+                href: develop/launch/launch-people-app.md
+              - name: Support web-to-app linking with app URI handlers
+                href: develop/launch/web-to-app-linking.md
+            - name: File activation
+              items:
+              - name: Handle file activation
+                href: develop/launch/handle-file-activation.md
+              - name: Launch the default app for a file
+                href: develop/launch/launch-the-default-app-for-a-file.md
             - name: Reserved file and URI scheme names
               href: develop/launch/reserved-uri-scheme-names.md
-            - name: Support web-to-app linking with app URI handlers
-              href: develop/launch/web-to-app-linking.md
-            - name: Working with background tasks in Windows apps
-              href: develop/launch/create-and-register-a-background-task.md
+            - name: Background tasks
+              items:
+              - name: Working with background tasks in Windows apps
+                href: develop/launch/create-and-register-a-background-task.md
         - name: Notifications
           items: 
             - name: Push notifications
