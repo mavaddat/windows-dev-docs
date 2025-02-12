@@ -48,3 +48,4 @@ This section describes how to manage background tasks in your app.
 ## Related content
 
 - [Launch Click to Do (Recall)](/windows/ai/apis/recall#launch-click-to-do)
+- [App lifecycle and system services](../app-lifecycle-and-system-services.md)

@@ -32,24 +32,6 @@ items:
           href: develop/index.md
         - name: Accessibility
           href: develop/accessibility.md
-        - name: App lifecycle and system services
-          items: 
-            - name: Overview
-              href: develop/app-lifecycle-and-system-services.md
-            - name: Manage app lifecycle
-              items: 
-                - name: App lifecycle
-                  href: windows-app-sdk/applifecycle/applifecycle.md
-                - name: App instancing
-                  href: windows-app-sdk/applifecycle/applifecycle-instancing.md
-                - name: Create a single-instanced app
-                  href: windows-app-sdk/applifecycle/applifecycle-single-instance.md
-                - name: Rich activation
-                  href: windows-app-sdk/applifecycle/applifecycle-rich-activation.md
-                - name: Power management
-                  href: windows-app-sdk/applifecycle/applifecycle-power.md
-                - name: Detect Focus session state
-                  href: windows-app-sdk/applifecycle/focus-session.md
         - name: Audio, video, and camera
           href: develop/audio-video-camera.md
           items:
@@ -240,6 +222,24 @@ items:
                 href: develop/launch/launch-the-default-app-for-a-file.md
             - name: Reserved file and URI scheme names
               href: develop/launch/reserved-uri-scheme-names.md
+            - name: App lifecycle and system services
+              items: 
+                - name: Overview
+                  href: develop/app-lifecycle-and-system-services.md
+                - name: Manage app lifecycle
+                  items: 
+                    - name: App lifecycle
+                      href: windows-app-sdk/applifecycle/applifecycle.md
+                    - name: App instancing
+                      href: windows-app-sdk/applifecycle/applifecycle-instancing.md
+                    - name: Create a single-instanced app
+                      href: windows-app-sdk/applifecycle/applifecycle-single-instance.md
+                    - name: Rich activation
+                      href: windows-app-sdk/applifecycle/applifecycle-rich-activation.md
+                    - name: Power management
+                      href: windows-app-sdk/applifecycle/applifecycle-power.md
+                    - name: Detect Focus session state
+                      href: windows-app-sdk/applifecycle/focus-session.md
             - name: Background tasks
               items:
               - name: Working with background tasks in Windows apps
