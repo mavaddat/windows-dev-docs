@@ -138,16 +138,17 @@ If you want to programmatically open the rating and review page for your app in 
 bool result = await Windows.System.Launcher.LaunchUriAsync(new Uri("ms-windows-store://review/?ProductId=9WZDNCRFHVJL"));
 ```
 
-For more information, see [Launch the Microsoft Store app](../launch-resume/launch-store-app.md).
+For more information, see [Launch the Microsoft Store app](/windows/apps/develop/launch/launch-store-app).
 
 ## Analyze your ratings and reviews data
 
 To analyze the ratings and reviews data from your customers, you have several options:
+
 * You can use the [Reviews](/windows/apps/publish/reviews-report) report in Partner Center to see the ratings and reviews from your customers. You can also download this report to view it offline.
 * You can use the [Get app ratings](get-app-ratings.md) and [Get app reviews](get-app-reviews.md) methods in the Store analytics API to programmatically retrieve the ratings and reviews from your customers in JSON format.
 
 ## Related topics
 
 * [Send requests to the Store](send-requests-to-the-store.md)
-* [Launch the Microsoft Store app](../launch-resume/launch-store-app.md)
+* [Launch the Microsoft Store app](/windows/apps/develop/launch/launch-store-app)
 * [Reviews report](/windows/apps/publish/reviews-report)
