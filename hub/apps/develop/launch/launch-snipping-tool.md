@@ -3,7 +3,7 @@ title: Launch Snipping Tool
 description: This topic describes how to use the new protocol launch framework for Snipping Tool. Your app can use these URI schemes to launch the Snipping Tool capture overlay to create a new snip or recording.
 
 ms.date: 01/30/2025
-ms.topic: article
+ms.topic: concept-article
 keywords: windows 11, uri, snipping tool, capture
 ms.localizationpriority: medium
 ms.custom: RS5
@@ -13,15 +13,17 @@ ms.custom: RS5
 
 This article specifies the protocol for integrating first and third-party applications with the Windows Snipping Tool using the **ms-clip:** URI (Uniform Resource Identifier) scheme. The protocol facilitates the capture of images and video with audio via the Snipping Tool. App callers can customize and choose which Snipping Tool features their app will display. The protocol is designed to offer flexibility, security, and ease of use, aligning closely with familiar HTTP-based interactions. This shift can make the protocol more intuitive for developers and facilitate its integration with web technologies. 
 
-Note: this protocol launch replaces the previous existing experience documented here:https://learn.microsoft.com/en-us/windows/uwp/launch-resume/launch-screen-snipping
+> [!NOTE]
+> This protocol launch replaces the previous existing experience documented [here](launch-screen-snipping.md).
 
 ## Supported Features include:
-	* Rectangle Capture
-	* Freeform Capture
-	* Window Capture
-	* Ability to launch directly into a Snip or Recording
-	* Customizing features available
-	* Autosave feature is available, but can be disabled
+
+* Rectangle Capture
+* Freeform Capture
+* Window Capture
+* Ability to launch directly into a Snip or Recording
+* Customizing features available
+* Autosave feature is available, but can be disabled
 
 
 ## Protocol Specification
@@ -46,7 +48,8 @@ Note: this protocol launch replaces the previous existing experience documented 
 
 The enabledModes parameter is designed to give developers granular control over the available UI options when invoking the ms-screenclip protocol. This allows for a tailored user experience that matches the specific requirements of the calling application. By specifying the enabledModes parameter, developers can restrict the user's choices in the Snipping Tool UI to ensure the output format meets their expectations. 
 
-Note: The FullScreenSnip mode is not supported in interactive mode at this time and should not be included in the enabledModes parameter. 
+> [!NOTE]
+> The FullScreenSnip mode is not supported in interactive mode at this time and should not be included in the enabledModes parameter. 
 
 
 ## Supported Modes
@@ -61,7 +64,8 @@ The **enabledModes** parameter can accept the following modes:
 **SnippingAllModes:** Enables all snipping (image capture) modes (RectangleSnip, WindowSnip, FreeformSnip). 
 **All:** Enables all supported modes (RectangleSnip, WindowSnip, FreeformSnip, RectangleRecord). 
 
-**Important: If no enabledModes parameter is specified, the default behavior will allow all modes.** 
+> [!IMPORTANT]
+> If no **enabledModes** parameter is specified, the default behavior will allow all modes.
 
 ## Examples
 
@@ -154,7 +158,7 @@ The use of the `SharedStorageAccessManager` class and of sharing tokens is subje
 
 ## Retrieving a token
 
-I have developed a sample application to test the process of calling the protocol and converting the response token into media. Use the [SharedStorageAccessManager] (https://learn.microsoft.com/en-us/uwp/api/windows.applicationmodel.datatransfer.sharedstorageaccessmanager?view=winrt-26100)library to obtain the token.
+I have developed a sample application to test the process of calling the protocol and converting the response token into media. Use the [SharedStorageAccessManager] (/uwp/api/windows.applicationmodel.datatransfer.sharedstorageaccessmanager) library to obtain the token.
 
 [Sample app code for retrieving tokens ](https://microsoft.visualstudio.com/Apps/_git/SnipProtocolTestApp?path=/SnipProtocolTestApp/MainPage.xaml.cs&version=GBmaster&line=139&lineEnd=140&lineStartColumn=1&lineEndColumn=1&lineStyle=plain&_a=contents)
 

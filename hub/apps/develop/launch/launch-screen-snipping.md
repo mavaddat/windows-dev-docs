@@ -10,8 +10,7 @@ ms.localizationpriority: medium
 
 # Launch screen snipping (Legacy)
 
-**This is a legacy method for activating the Snipping Tool. It will be deprecated on 05/01/2025. Please refer to the updated documentation: [Launch Snipping Tool
-](/hub/apps/develop/launch/launch-snipping-tool.md)**
+**This is a legacy method for activating the Snipping Tool. It will be deprecated on 05/01/2025. Please refer to the updated documentation: [Launch Snipping Tool](launch-snipping-tool.md).
 
 The **ms-screenclip:** and **ms-screensketch:** URI schemes allows you to initiate snipping or editing screenshots.
 
