@@ -73,31 +73,31 @@ The **enabledModes** parameter can accept the following modes:
 
 ### Example 1: Enable Only Rectangle Snip
 
-ms-screenclip://capture/image?rectangle&enabledModes=RectangleSnip&redirect-uri=my-snip-protocol-test-app://response
+`ms-screenclip://capture/image?rectangle&enabledModes=RectangleSnip&redirect-uri=my-snip-protocol-test-app://response`
 
 *Explanation: This command launches the Snipping Tool with only the rectangle snipping option enabled. The user will only be able to select a rectangular region for capture.*
 
 ### Example 2: Enable Rectangle Snip and Window Snip
 
-ms-screenclip://capture/image?rectangle&enabledModes=RectangleSnip,WindowSnip&redirect-uri=my-snip-protocol-test-app://response
+`ms-screenclip://capture/image?rectangle&enabledModes=RectangleSnip,WindowSnip&redirect-uri=my-snip-protocol-test-app://response`
 
 *Explanation: This command launches the Snipping Tool with both the rectangle and window snipping modes enabled. The user can choose between capturing a rectangular area or an entire window.*
 
 ### Example 3: Enable All Snipping Modes
 
-ms-screenclip://capture/image?rectangle&enabledModes=SnippingAllModes&redirect-uri=my-snip-protocol-test-app://response
+`ms-screenclip://capture/image?rectangle&enabledModes=SnippingAllModes&redirect-uri=my-snip-protocol-test-app://response`
 
 *Explanation: This command launches the Snipping Tool with all supported image snipping modes (RectangleSnip, WindowSnip, FreeformSnip). The FullScreenSnip mode is excluded from interactive mode and will not be enabled.*
 
 ### Example 4: Enable Recording Mode Only
 
-ms-screenclip://capture/video?enabledModes=RecordAllModes&redirect-uri=my-snip-protocol-test-app://response
+`ms-screenclip://capture/video?enabledModes=RecordAllModes&redirect-uri=my-snip-protocol-test-app://response`
 
 *Explanation: This command launches the Snipping Tool with only the recording mode enabled. The user can only choose the rectangle recording mode.*
 
 ### Example 5: Enable Multiple Snipping and Recording Modes
 
-ms-screenclip://capture/image?enabledModes=RectangleSnip,RectangleRecord&redirect-uri=my-snip-protocol-test-app://response
+`ms-screenclip://capture/image?enabledModes=RectangleSnip,RectangleRecord&redirect-uri=my-snip-protocol-test-app://response`
 
 *Explanation: This command launches the Snipping Tool with both rectangle snip and rectangle recording modes available. Users can either snip a rectangle or record the selected area.*
 
@@ -186,8 +186,8 @@ Below is a table displaying examples of full URIs constructed to initiate differ
 
 | Use Case                     | Example URI                                                                                                                                            | Description                                                                                                      |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| Rectangle Mode - Interactive | ms-screenclip://capture/image?user-agent=TestApp&Rectangle&uri=my-snip-protocol-test-app://response                                                     | An application initiates an interactive rectangle capture session, where the user selects the capture area. The result is redirected to a specific URI. |
-| Video Mode - Interactive     | ms-screenclip://capture/video?api-version=1.0&user-agent=TestApp&redirect-uri=my-snip-protocol-test-app://response                                      | A video capture. Always in rectangle mode. |
+| Rectangle Mode - Interactive | `ms-screenclip://capture/image?user-agent=TestApp&Rectangle&uri=my-snip-protocol-test-app://response`                                                     | An application initiates an interactive rectangle capture session, where the user selects the capture area. The result is redirected to a specific URI. |
+| Video Mode - Interactive     | `ms-screenclip://capture/video?api-version=1.0&user-agent=TestApp&redirect-uri=my-snip-protocol-test-app://response`                                      | A video capture. Always in rectangle mode. |
 
 ## Related content
 
