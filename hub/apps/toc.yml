@@ -209,9 +209,8 @@ items:
               - name: Launch the Windows Maps app
                 href: develop/launch/launch-maps-app.md
               - name: Launch Snipping Tool
+                href: develop/launch/launch-snipping-tool.md
               - items:
-                - name: Launch Snipping Tool
-                  href: develop/launch/launch-snipping-tool.md
                 - name: Launch screen snipping (legacy)
                   href: develop/launch/launch-screen-snipping.md
               - name: Launch the People app
