@@ -87,25 +87,24 @@ The response is a JSON object containing:
 
 ### Example Response
 
-```
+```json
 {
-    "version": 1.2,
-    "capabilities": [
-        {
-            "path": "capture/image",
-            "methods": ["GET"],
-            "parameters": ["rectangle", "freeform", "window"],
-            "description": "Captures an image with options for shape."
-        },
-        {
-            "path": "capture/video",
-            "methods": ["GET"],
-            "parameters": [],
-            "description": "Captures a video in a defined area."
-        }
-    ]
+  "version": 1.2,
+  "capabilities": [
+    {
+      "path": "capture/image",
+      "methods": ["GET"],
+      "parameters": ["rectangle", "freeform", "window"],
+      "description": "Captures an image with options for shape."
+    },
+    {
+      "path": "capture/video",
+      "methods": ["GET"],
+      "parameters": [],
+      "description": "Captures a video in a defined area."
+    }
+  ]
 }
-
 ```
 
 ## EnabledModes
@@ -171,7 +170,7 @@ _Explanation: This command launches the Snipping Tool with both rectangle snip a
 
 _Explanation: Since rectangle is specified in the URI, only rectangle snipping mode will be available in the Snipping Tool UI._
 
-### Example 7: No `mode` or `enabledModes` specified.
+### Example 7: No `mode` or `enabledModes` specified
 
 `ms-screenclip://capture/image?redirect-uri=my-snip-protocol-test-app://response`
 
