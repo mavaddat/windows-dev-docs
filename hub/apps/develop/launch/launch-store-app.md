@@ -8,7 +8,7 @@ ms.topic: concept-article
 
 # Using ms-windows-store URIs
 
-This topic describes the **ms-windows-store:** URI scheme. Your app can use this URI scheme to launch the Microsoft Store app to specific pages in the store by using the [**LaunchUriAsync**](/uwp/api/windows.system.launcher.launchuriasync) method on Windows.
+This topic describes the **ms-windows-store:** URI scheme. Your app can use this URI scheme to launch the Microsoft Store app to specific pages in the store by using the [LaunchUriAsync](/uwp/api/windows.system.launcher.launchuriasync) method on Windows.
 
 For example, you can open the Store to the Games page using the following code:
 
