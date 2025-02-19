@@ -25,7 +25,7 @@ Where those biometrics are not configured or available, both passkey creation an
 
 ## Demos and examples
 
-See [FIDO2/WebAuthn Tools](https://passkeys.dev/docs/tools-libraries/test-sites/#fido2webauthn-tools) and [Demo Sites](https://passkeys.dev/docs/tools-libraries/test-sites/#demo-sites).
+See [Windows Reference on passkeys.dev](https://passkeys.dev/docs/reference/windows/) and [Demo Sites](https://passkeys.dev/docs/tools-libraries/test-sites/#demo-sites).
 
 ## Further info
 
