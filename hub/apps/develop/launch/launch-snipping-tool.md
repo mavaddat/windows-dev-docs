@@ -18,7 +18,7 @@ This article specifies the protocol for integrating first and third-party applic
 
 ## Supported features
 
-sSnipping Tool protocol supports the following features:
+The Snipping Tool protocol supports the following features:
 
 - Rectangle Capture
 - Freeform Capture
@@ -65,7 +65,7 @@ sSnipping Tool protocol supports the following features:
 
 ### Discover Host
 
-Snipping Tool protocol supports a `discover` endpoint that allows applications to retrieve available features, supported modes, and protocol versions dynamically. This is useful for ensuring compatibility with future updates or querying what capture methods are available.
+The Snipping Tool protocol supports a `discover` endpoint that allows applications to retrieve available features, supported modes, and protocol versions dynamically. This is useful for ensuring compatibility with future updates or querying what capture methods are available.
 
 ### How to Use
 
@@ -121,10 +121,11 @@ The **enabledModes** parameter can accept the following modes:
 - **RectangleSnip:** Enables rectangle capture mode.
 - **WindowSnip:** Enables window capture mode.
 - **FreeformSnip:** Enables freeform capture mode.
-- **SnippingAllModes:** Enables all snipping (image capture) modes (RectangleSnip, WindowSnip, FreeformSnip).
+- **FullscreenSnip:** Enables fullscreen capture mode.
+- **SnippingAllModes:** Enables all snipping (image capture) modes (RectangleSnip, WindowSnip, FreeformSnip, FullscreenSnip).
 - **RectangleRecord:** Enables rectangle recording mode.
 - **RecordAllModes:** Enables all recording modes (currently only RectangleRecord is available).
-- **All:** Enables all supported modes (RectangleSnip, WindowSnip, FreeformSnip, RectangleRecord).
+- **All:** Enables all supported modes (RectangleSnip, WindowSnip, FreeformSnip, FullscreenSnip, RectangleRecord).
 
 > [!IMPORTANT]
 > If the **enabledModes** parameter is omitted, Snipping Tool will default to the mode explicitly specified in the URI (e.g., `rectangle`, `freeform`).
@@ -150,7 +151,7 @@ _Explanation: This command launches Snipping Tool's overlay with both the rectan
 
 `ms-screenclip://capture/image?rectangle&enabledModes=SnippingAllModes&redirect-uri=my-snip-protocol-test-app://response`
 
-_Explanation: This command launches Snipping Tool's overlay with all supported image snipping modes (RectangleSnip, WindowSnip, FreeformSnip). The FullScreenSnip mode is excluded from interactive mode and will not be enabled._
+_Explanation: This command launches Snipping Tool's overlay with all supported image snipping modes (RectangleSnip, WindowSnip, FreeformSnip, FullscreenSnip). The FullScreenSnip mode is excluded from interactive mode and will not be enabled._
 
 ### Example 4: Enable Recording Mode Only
 
@@ -162,7 +163,7 @@ _Explanation: This command launches Snipping Tool's overlay with only the record
 
 `ms-screenclip://capture/image?freeform&enabledModes=RectangleSnip,RectangleRecord&redirect-uri=my-snip-protocol-test-app://response`
 
-_Explanation: This command launches Snipping Tool's overlay with rectangle recording, rectangle and freeform snipping modes available. Since freeform mode was specified in the URI, it will be the default pre-selected mode. Users can choose to snip in freeform, rectangle, or record a the selected region.._
+_Explanation: This command launches the Snipping Tool overlay with freeform snip, rectangle snip, and rectangle recording modes available. Since freeform mode is specified in the URI, it will be pre-selected by default. Users can choose to snip in freeform, rectangle, or record the selected region._
 
 ### Example 6: Enable Rectangle Snipping Only
 
@@ -179,8 +180,7 @@ _Explanation: This request does not specify any mode, making it invalid. Snippin
 ## Key considerations
 
 - **Mode Restrictions:** Developers should ensure that enabling specific modes aligns with the expected behavior of their application. Restricting UI options helps maintain a consistent user experience and ensures the resulting capture matches the application's needs.
-- **Unsupported Modes:** The FullScreenSnip mode is not supported and should not be included in the `enabledModes` parameter.
-- **Default Behavior:** If no `enabledModes` parameter is specified, all modes (RectangleSnip, WindowSnip, FreeformSnip, RectangleRecord) are available by default.
+- **Default Behavior:** If no `enabledModes` parameter is specified, only the `mode` specified in the URI will be available on the UI.
 
 ## Security Considerations
 
