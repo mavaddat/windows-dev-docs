@@ -111,9 +111,6 @@ The response is a JSON object containing:
 
 The **enabledModes** parameter is designed to give developers granular control over the available UI options when invoking the ms-screenclip protocol. This allows for a tailored user experience that matches the specific requirements of the calling application. By specifying the **enabledModes** parameter, developers can restrict the user's choices in Snipping Tool's UI to ensure the output format meets their expectations.
 
-> [!NOTE]
-> The FullScreenSnip mode is not supported in interactive mode at this time and should not be included in the **enabledModes** parameter.
-
 ### Supported modes
 
 The **enabledModes** parameter can accept the following modes:
