@@ -20,7 +20,8 @@ The following tables show the audio codec and format support for each device fam
 > [!NOTE] 
 > Where AMR-NB support is indicated, this codec is not supported on Server SKUs.
 
- 
+> [!NOTE]
+> On versions of Windows prior to Windows 11, version 24H2, the AC-3 codec is included. Beginning with Windows 11, version 24H2, the AC-3 codec is no longer included with Windows. However, many device manufacturers will pre-install an AC-3 codec. 
 
 ### Desktop
 
@@ -1475,7 +1476,7 @@ The following tables show the video codec and format support for each device fam
 
 <sup>*</sup> MPEG-2/MPEG-1 codec is available with install of optional Microsoft UWP DVD application.
 
-<sup>**</sup> H.265 and AV1 are avaliable with the install of the corresponding optional codec pack.
+<sup>**</sup> H.265 and AV1 are available with the install of the corresponding optional codec pack.
 
 ### Mobile
 
@@ -1842,7 +1843,7 @@ The following tables show the video codec and format support for each device fam
 
 <sup>*</sup> MPEG-2/MPEG-1 codec is available with install of optional Microsoft UWP DVD application.
 
-<sup>**</sup> H.265 and AV1 are avaliable with the install of the corresponding optional codec pack.
+<sup>**</sup> H.265 and AV1 are available with the install of the corresponding optional codec pack.
  
 
 

@@ -1,6 +1,6 @@
 ---
 title: Sliders
-description: Learn how to implement a Windows UI Library slider control that lets the user select from a range of values by moving a thumb control along a track.
+description: Learn how to implement a WinUI slider control that lets the user select from a range of values by moving a thumb control along a track.
 ms.assetid: 7EC7EA33-BE7E-4FD5-B205-B8FA7B729ACC
 label: Sliders
 template: detail.hbs
@@ -139,7 +139,7 @@ We recommend using the latest [WinUI 2](../../winui/winui2/index.md) to get the 
 > - **Important APIs**: [Slider class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.slider), [Value property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.rangebase.value), [ValueChanged event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.rangebase.valuechanged)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the Slider in action](winui3gallery:/item/Slider).
+> [Open the WinUI 3 Gallery app and see the Slider in action](winui3gallery:/item/Slider)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 

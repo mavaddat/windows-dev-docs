@@ -4,8 +4,6 @@ description: WinUI 3 and the Windows App SDK are new technologies and, when comp
 ms.topic: article
 ms.date: 03/05/2024
 keywords: Windows, App, SDK, port, porting, migrate, migration, support
-ms.author: stwhi
-author: stevewhims
 ms.localizationpriority: medium
 ---
 
@@ -47,3 +45,7 @@ Today in version 1.5 of the Windows App SDK, launch speeds, RAM usage, and insta
 ## Visual Studio
 
 The **Design** tab of the XAML Designer in Visual Studio (and Blend for Visual Studio) doesn't currently support WinUI 3 projects (as of version 1.5 of the Windows App SDK). For more info, see [Create a UI by using XAML Designer](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio).
+
+## See Also
+
+- [Windows App SDK and supported Windows releases](../support.md)

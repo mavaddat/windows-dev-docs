@@ -28,9 +28,9 @@ If a particular command will be used frequently and you have the space available
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-MenuBar requires Windows 10, version 1809 ([SDK 17763](https://developer.microsoft.com/windows/downloads/windows-10-sdk)) or later, or the [Windows UI Library](/uwp/toolkits/winui/).
+MenuBar requires Windows 10, version 1809 ([SDK 17763](https://developer.microsoft.com/windows/downloads/windows-10-sdk)) or later, or [WinUI 2](../../winui/winui2/index.md).
 
-The MenuFlyout and MenuBar controls for UWP apps are included as part of the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for these controls exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespaces.
+The MenuFlyout and MenuBar controls for UWP apps are included as part of WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for these controls exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespaces.
 
 > [!div class="checklist"]
 >
@@ -56,7 +56,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs:** [MenuFlyout class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.menuflyout), [ContextFlyout property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.uielement.contextflyout), [FlyoutBase.AttachedFlyout property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.flyoutbase.attachedflyout)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see MenuBar in action](winui3gallery:/item/MenuBar).
+> [Open the WinUI 3 Gallery app and see MenuFlyout in action](winui3gallery://item/MenuFlyout)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -184,7 +184,7 @@ Light dismiss controls such as menus, context menus, and other flyouts, trap key
 > - **Important APIs:** [MenuBar class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.menubar). [MenuBarItem class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.menubaritem)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see MenuBar in action](winui3gallery:/item/MenuBar).
+> [Open the WinUI 3 Gallery app and see MenuBar in action](winui3gallery:/item/MenuBar)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 

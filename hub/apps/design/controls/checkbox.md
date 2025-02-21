@@ -76,7 +76,7 @@ We recommend using the latest [WinUI 2](../../winui/winui2/index.md) to get the 
 > - **Important APIs**: [CheckBox class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.checkbox), [Checked event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.togglebutton.checked), [IsChecked property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.togglebutton.ischecked), [Content property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.contentcontrol.content)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the CheckBox in action](winui3gallery:/item/CheckBox).
+> [Open the WinUI 3 Gallery app and see the CheckBox in action](winui3gallery:/item/CheckBox)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -277,8 +277,8 @@ private void SelectAll_Indeterminate(object sender, RoutedEventArgs e)
     // If the SelectAll box is checked (all options are selected),
     // clicking the box will change it to its indeterminate state.
     // Instead, we want to uncheck all the boxes,
-    // so we do this programatically. The indeterminate state should
-    // only be set programatically, not by the user.
+    // so we do this programmatically. The indeterminate state should
+    // only be set programmatically, not by the user.
 
     if (Option1CheckBox.IsChecked == true &&
         Option2CheckBox.IsChecked == true &&

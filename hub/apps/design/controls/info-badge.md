@@ -152,7 +152,7 @@ The info badge comes at a default size that meets accessibility requirements. Yo
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-The InfoBadge for UWP apps requires the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for this control exist in the [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespace.
+The InfoBadge for UWP apps requires WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for this control exist in the [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespace.
 
 > [!div class="checklist"]
 >
@@ -177,7 +177,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs:** [InfoBadge class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.infobadge), [IconSource property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.infobadge.iconsource), [Value property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.infobadge.value)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the InfoBadge in action](winui3gallery:/item/InfoBadge).
+> [Open the WinUI 3 Gallery app and see the InfoBadge in action](winui3gallery:/item/InfoBadge)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 

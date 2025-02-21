@@ -44,7 +44,7 @@ You can use the CommandBarFlyout in either way, or even a mixture of the two.
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-The CommandBarFlyout control for UWP apps is included as part of the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for this control exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) (UWP) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) (WinUI) namespaces.
+The CommandBarFlyout control for UWP apps is included as part of WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for this control exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) (UWP) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) (WinUI) namespaces.
 
 > [!div class="checklist"]
 >
@@ -69,7 +69,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs:** [CommandBarFlyout class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.commandbarflyout), [TextCommandBarFlyout class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.textcommandbarflyout), [AppBarButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.appbarbutton), [AppBarToggleButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.appbartogglebutton), [AppBarSeparator class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.appbarseparator)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the CommandBarFlyout in action](winui3gallery:/item/CommandBarFlyout).
+> [Open the WinUI 3 Gallery app and see the CommandBarFlyout in action](winui3gallery:/item/CommandBarFlyout)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -196,7 +196,7 @@ Here, an AppBarElementContainer is used to add extra elements to a command bar f
 > [!TIP]
 > By default, elements designed for the app canvas might not look right in a command bar. When you add an element using AppBarElementContainer, there are some steps you should take to make the element match other command bar elements:
 >
-> - Override the default brushes with [lightweight styling](../style/xaml-styles.md#lightweight-styling) to make the element's background and border match the app bar buttons.
+> - Override the default brushes with [lightweight styling](../../develop/platform/xaml/xaml-styles.md#lightweight-styling) to make the element's background and border match the app bar buttons.
 > - Adjust the size and position of the element.
 > - Wrap icons in a Viewbox with a Width and Height of 16px.
 

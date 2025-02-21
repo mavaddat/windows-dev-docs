@@ -2,10 +2,8 @@
 description: The top 11 things you can do to make your app great on Windows 11.
 title: Top 11 things you can do to make your app great on Windows 11
 ms.topic: article
-ms.date: 05/06/2022
+ms.date: 10/02/2024
 keywords: windows win32, desktop development
-ms.author: jimwalk
-author: jwmsft
 ms.localizationpriority: medium
 ms.collection: windows11
 ---
@@ -30,10 +28,6 @@ Users expect solid fundamentals from any app they install on their device. They 
 [Test your app to be compatible with Windows 11](/windows/compatibility/windows-11/testing-guidelines)
 
 Microsoft is committed to ensuring your apps work on the latest versions of our software and Windows 11 has been built with compatibility in mind. Our promise states that apps that worked on Windows 7/8.1/10 will work on Windows 11. If you experience any issues with your apps, Microsoft will help you identify the issue at no cost so that you can then fix the issue. Visit the [App Assure](/fasttrack/introduction) page and sign in to submit your request for assistance from a dedicated App Assure Manager.
-
-Along with App Assure, we have enabled Windows 11 testing and validation on [Test Base](https://aka.ms/testbase), as part of our commitment to ensuring your apps work on the latest versions of our software. Test Base is an intelligent application validation service that allows software vendors and commercial customers to test their applications with a matrix of updates and environments in a Microsoft-managed Azure environment. With Test Base, you now have access to test your applications ahead of time and work with Microsoft to remediate issues before they impact your end users. 
-
-See the [Test Base](https://aka.ms/testbase) page to sign up.
 
 ## 2. Have a discoverable and easy to understand privacy policy
 
@@ -113,8 +107,8 @@ Snap layouts are a new Windows 11 feature to help introduce users to the power o
 - Most apps will automatically receive rounded corners and support for the menu with snap layouts, but in some cases you might need to do a little work to get them:
   - Allow the system to draw your border and shadow.
   -  If you need to draw your own border and shadow:
-     - Call our rounding API to opt in. See [Apply rounded corners in desktop apps for Windows 11](../desktop/modernize/apply-rounded-corners.md).
-     - Use our APIs to have the platform draw and implement the caption buttons. See [Support snap layouts for desktop apps on Windows 11](../desktop/modernize/apply-snap-layout-menu.md).
+     - Call our rounding API to opt in. See [Apply rounded corners in desktop apps for Windows 11](../desktop/modernize/ui/apply-rounded-corners.md).
+     - Use our APIs to have the platform draw and implement the caption buttons. See [Support snap layouts for desktop apps on Windows 11](../desktop/modernize/ui/apply-snap-layout-menu.md).
 - You will get these features automatically if you use UWP or you adopt Windows App SDK windowing to:
   - Configure the style of your window using the pre-defined templates.
   - Customize the title bar of your windows.
@@ -126,7 +120,7 @@ We support Light and Dark themes, which is a great way to let the user express t
 ![A split image of an app in light theme on the left, and dark theme on the right.](images/great-apps/themes.png)
 
 - The color palette of WinUI is being updated to feel lighter (use WinUI 2.6 or greater). If your apps have hardcoded custom colors, you may need to make updates to match the overall color theory, regardless of technology.
-- If you are using [UXTheme](/windows/win32/api/uxtheme/) based Win32 surfaces, the Light theme will have rejuvenated controls (for example, rounded buttons). You should test your apps to validate that local styling does not override updated global defaults. (For Win32 apps, see [Support Dark and Light themes in Win32 apps](../desktop/modernize/apply-windows-themes.md).)
+- If you are using [UXTheme](/windows/win32/api/uxtheme/) based Win32 surfaces, the Light theme will have rejuvenated controls (for example, rounded buttons). You should test your apps to validate that local styling does not override updated global defaults. (For Win32 apps, see [Support Dark and Light themes in Win32 apps](../desktop/modernize/ui/apply-windows-themes.md).)
 
 ## 8. Optimize your app's context menu extensions and Share targets
 

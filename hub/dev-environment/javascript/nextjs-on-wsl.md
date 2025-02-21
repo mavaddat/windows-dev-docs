@@ -1,9 +1,6 @@
 ---
 title: Install Next.js on Windows
 description: A guide to help you get started using the Next.js web frameworks on Windows Subsystem for Linux.
-author: mattwojo 
-ms.author: mattwoj 
-manager: jken
 ms.topic: article
 keywords: Next.js, NextJS, Node.js, windows 10, microsoft, learning nodejs, node on windows, node on wsl, node on linux on windows, install node on windows, nodejs with vs code, develop with node on windows, develop with nodejs on windows, install node on WSL, NodeJS on Windows Subsystem for Linux
 ms.localizationpriority: medium
@@ -14,7 +11,7 @@ ms.date: 03/30/2021
 
 A guide to help you install the Next.js web framework and get up and running on Windows.
 
-Next.js is a JavaScript framewpork tailored for building React-based web applications, offering support for both static and server-side rendered web applicaions. Built with best practices in mind, Next.js enables you to create "universal" web apps in a consistent manner, requiring mininmal configuration. These "universal" server-rendered web apps, also referred to as “isomorphic”, share code between the client and server.
+Next.js is a JavaScript framework tailored for building React-based web applications, offering support for both static and server-side rendered web applications. Built with best practices in mind, Next.js enables you to create "universal" web apps in a consistent manner, requiring minimal configuration. These "universal" server-rendered web apps, also referred to as “isomorphic”, share code between the client and server.
 Next.js enables developers to create fast, scalable, and SEO-friendly web applications with ease.
 
 To learn more about React and other JavaScript frameworks based on React, see the [React overview](./react-overview.md) page.
@@ -64,7 +61,7 @@ To install Next.js, which includes installing next, react, and react-dom:
 
     ![Your Next.js app running in localhost:3000](../../images/next-app.png)
 
-7. Open the `app/page.tsx` file in your VS Code editor. Find `Get started by editing..` and replace everthing inside the `<p>` tag with `This is my new Next.js app!the page title`. With your web browser still open to localhost:3000, save your change and notice the hot-reloading feature automatically compile and update your change in the browser.
+7. Open the `app/page.tsx` file in your VS Code editor. Find `Get started by editing..` and replace everything inside the `<p>` tag with `This is my new Next.js app!the page title`. With your web browser still open to localhost:3000, save your change and notice the hot-reloading feature automatically compile and update your change in the browser.
 
 You can use VS Code's debugger with your Next.js app by selecting the F5 key, or by going to **View > Debug** (Ctrl+Shift+D) and **View > Debug Console** (Ctrl+Shift+Y) in the menu bar. If you select the gear icon in the Debug window, a launch configuration (`launch.json`) file will be created for you to save debugging setup details. To learn more, see [VS Code Debugging](https://code.visualstudio.com/docs/nodejs/nodejs-debugging).
 

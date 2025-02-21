@@ -117,7 +117,7 @@ This example uses three buttons, **Save**, **Don't Save**, and **Cancel**, in a 
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-The DropDownButton, SplitButton, and ToggleSplitButton controls for UWP apps are included as part of the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for these controls exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespaces.
+The DropDownButton, SplitButton, and ToggleSplitButton controls for UWP apps are included as part of WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for these controls exist in both the [Windows.UI.Xaml.Controls](/uwp/api/Windows.UI.Xaml.Controls) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespaces.
 
 > [!div class="checklist"]
 >
@@ -144,7 +144,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs:** [Button class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.button), [Click event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.buttonbase.click), [Command property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.buttonbase.command), [Content property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.contentcontrol.content)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the Buttons in action](winui3gallery:/item/Button).
+> [Open the WinUI 3 Gallery app and see the Buttons in action](winui3gallery:/item/Button)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -224,7 +224,7 @@ The button looks like this.
 > - **Important APIs:** [RepeatButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.repeatbutton), [Click event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.buttonbase.click), [Content property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.contentcontrol.content)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the RepeatButton in action](winui3gallery:/item/RepeatButton).
+> [Open the WinUI 3 Gallery app and see the RepeatButton in action](winui3gallery:/item/RepeatButton)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -265,7 +265,7 @@ private void Decrease_Click(object sender, RoutedEventArgs e)
 > - **Important APIs**: [DropDownButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.button), [Flyout property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.button.flyout)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the DropdownButton in action](winui3gallery:/item/DropdownButton).
+> [Open the WinUI 3 Gallery app and see the DropdownButton in action](winui3gallery:/item/DropdownButton)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -329,7 +329,7 @@ private void AlignmentMenuFlyoutItem_Click(object sender, RoutedEventArgs e)
 > - **Important APIs**: [SplitButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.splitbutton), [Click event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.primitives.buttonbase.click), [Flyout property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.button.flyout)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the SplitButton in action](winui3gallery:/item/SplitButton).
+> [Open the WinUI 3 Gallery app and see the SplitButton in action](winui3gallery:/item/SplitButton)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -445,7 +445,7 @@ public sealed partial class MainPage : Page
 > - **Important APIs**: [ToggleSplitButton class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.togglesplitbutton), [IsCheckedChanged event](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.togglesplitbutton.ischeckedchanged), [IsChecked property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.togglesplitbutton.ischecked)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the ToggleSplitButton in action](winui3gallery:/item/ToggleSplitButton).
+> [Open the WinUI 3 Gallery app and see the ToggleSplitButton in action](winui3gallery:/item/ToggleSplitButton)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 

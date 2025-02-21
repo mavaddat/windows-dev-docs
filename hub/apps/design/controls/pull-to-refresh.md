@@ -97,7 +97,7 @@ When you change the pull direction, the starting position of the visualizer's pr
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-The refresh controls for UWP apps are included as part of the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for this control exist in both the [Windows.UI.Xaml.Controls](/uwp/api/windows.UI.Xaml.Controls) (UWP) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) (WinUI) namespaces.
+The refresh controls for UWP apps are included as part of WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for this control exist in both the [Windows.UI.Xaml.Controls](/uwp/api/windows.UI.Xaml.Controls) (UWP) and [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) (WinUI) namespaces.
 
 > [!div class="checklist"]
 >
@@ -122,7 +122,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs**: [RefreshContainer](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.refreshcontainer), [RefreshVisualizer](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.refreshvisualizer)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see PullToRefresh in action](winui3gallery:/item/PullToRefresh).
+> [Open the WinUI 3 Gallery app and see PullToRefresh in action](winui3gallery:/item/PullToRefresh)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 

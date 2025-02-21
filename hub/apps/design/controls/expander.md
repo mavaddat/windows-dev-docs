@@ -24,7 +24,7 @@ Use an `Expander` when some primary content should always be visible, but relate
 
 [!INCLUDE [uwp-winui2-note](../../../includes/uwp-winui-2-note.md)]
 
-The Expander for UWP apps requires the Windows UI Library 2. For more info, including installation instructions, see [Windows UI Library](../../winui/winui2/index.md). APIs for this control exist in the [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespace.
+The Expander for UWP apps requires WinUI 2. For more info, including installation instructions, see [WinUI 2](../../winui/winui2/index.md). APIs for this control exist in the [Microsoft.UI.Xaml.Controls](/windows/winui/api/microsoft.ui.xaml.controls) namespace.
 
 > [!div class="checklist"]
 >
@@ -46,7 +46,7 @@ xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
 > - **Important APIs:** [Expander class](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.expander), [Header property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.expander.header), [Content property](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.controls.contentcontrol.content)
 
 > [!div class="nextstepaction"]
-> [Open the WinUI 3 Gallery app and see the Expander in action](winui3gallery:/item/Expander).
+> [Open the WinUI 3 Gallery app and see the Expander in action](winui3gallery:/item/Expander)
 
 [!INCLUDE [winui-3-gallery](../../../includes/winui-3-gallery.md)]
 
@@ -139,7 +139,7 @@ By default, the [Expander](/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.
 <Expander IsExpanded="True" ExpandDirection="Up">
 ```
 
-An `Expander` is expanded or collapsed either programatically by setting the `IsExpanded` property, or by interacting with the `Header`; it cannot be light-dismissed.
+An `Expander` is expanded or collapsed either programmatically by setting the `IsExpanded` property, or by interacting with the `Header`; it cannot be light-dismissed.
 
 > [!TIP]
 > Transient UI, such as a `Flyout` or the open drop-down of a `ComboBox`, closes when you click or tap outside of it. This is called _light-dismiss_. The content area of an `Expander` is not considered transient and does not overlay other UI, so it does not support light-dismiss.
@@ -235,7 +235,7 @@ private void Expander_Collapsed(muxc.Expander sender,
 
 ### Lightweight styling
 
-You can modify the default `Style` and `ControlTemplate` to give the control a unique appearance. See the Control Style and Template section of the Expander API docs for a list of the available theme resources. For more info, see the [Light-weight styling section](../style/xaml-styles.md#lightweight-styling) of the [Styling controls](../style/xaml-styles.md) article.
+You can modify the default `Style` and `ControlTemplate` to give the control a unique appearance. See the Control Style and Template section of the Expander API docs for a list of the available theme resources. For more info, see the [Light-weight styling section](../../develop/platform/xaml/xaml-styles.md#lightweight-styling) of the [Styling controls](../../develop/platform/xaml/xaml-styles.md) article.
 
 ## Recommendations
 
