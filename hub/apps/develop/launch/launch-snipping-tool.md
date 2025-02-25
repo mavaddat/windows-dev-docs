@@ -168,11 +168,11 @@ _Explanation: This command launches the Snipping Tool overlay with freeform snip
 
 _Explanation: Since rectangle is specified in the URI, only rectangle snipping mode will be available in Snipping Tool's UI._
 
-### Example 7: No `mode` or `enabledModes` specified
+### Example 7: No `mode` specified
 
-`ms-screenclip://capture/image?redirect-uri=my-snip-protocol-test-app://response`
+`ms-screenclip://capture/image?&enabledModes=All&redirect-uri=my-snip-protocol-test-app://response`
 
-_Explanation: This request does not specify any mode, making it invalid. Snipping Tool will ignore the call._
+_Explanation: This request is invalid because it does not specify a mode (e.g., `rectangle`, `window`, or `freeform`). Even though `enabledModes=All` is provided, a default mode must always be specified. As a result, Snipping Tool will ignore the call._
 
 ## Key considerations
 
