@@ -127,8 +127,9 @@ The **enabledModes** parameter can accept the following modes:
 > [!IMPORTANT]
 > If the **enabledModes** parameter is omitted, Snipping Tool will default to the mode explicitly specified in the URI (e.g., `rectangle`, `freeform`).
 >
-> - If a mode is explicitly specified in the URI (such as rectangle), only that mode will be available in Snipping Tool's UI.
-> - If no mode is specified and **enabledModes** is also not provided, the request is considered invalid and will be ignored.
+> - If a mode is explicitly specified in the URI (such as `rectangle`), only that mode will be available in Snipping Tool's UI.
+> - If no default mode is specified in the URI, the request is considered invalid and will be ignored, even if enabledModes is provided.
+> - The default mode parameter (e.g., `rectangle`, `freeform`) is required for **enabledModes** to function and for the request to be considered valid.
 
 ## Examples
 
