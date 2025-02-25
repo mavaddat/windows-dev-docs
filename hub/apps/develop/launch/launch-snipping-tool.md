@@ -154,7 +154,7 @@ _Explanation: This command launches Snipping Tool's overlay with all supported i
 
 `ms-screenclip://capture/video?enabledModes=RecordAllModes&redirect-uri=my-snip-protocol-test-app://response`
 
-_Explanation: This command launches Snipping Tool's overlay with only the recording mode enabled. The user can only choose the rectangle region to record._
+_Explanation: This command launches Snipping Tool's overlay with only the recording mode enabled. The user will be limited to selecting a rectangular region for recording, with no option to take a screenshot._
 
 ### Example 5: Enable Multiple Snipping and Recording Modes
 
