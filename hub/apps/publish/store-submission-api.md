@@ -24,10 +24,10 @@ Before you start writing code to call the Microsoft Store submission API for MSI
 - You (or your organization) must have an Azure AD directory and you must have Global administrator permission for the directory. If you already use Microsoft 365 or other business services from Microsoft, you already have Azure AD directory. Otherwise, you can [create a new Azure AD in Partner Center](partner-center/manage-azure-ad-applications-in-partner-center.md) for no additional charge.
 - You must associate an Azure AD application with your Partner Center account and obtain your tenant ID, client ID and key. You need these values to obtain an Azure AD access token, which you will use in calls to the Microsoft Store submission API.
 - Prepare your app for use with the Microsoft Store submission API:
-  - If your app does not yet exist in Partner Center, you must [create your app by reserving its name](publish-your-app/reserve-your-apps-name.md?pivots=store-installer-msi-exe) in Partner Center. You cannot use the Microsoft Store submission API to create an app in Partner Center; you must work in Partner Center to create it, and then after that you can use the API to access the app and programmatically create submissions for it.
-  - Before you can create a submission for a given app using this API, you must first [create one submission for the app](publish-your-app/create-app-submission.md?pivots=store-installer-msi-exe)] in Partner Center, including answering the [age ratings](publish-your-app/age-ratings.md?pivots=store-installer-msi-exe) questionnaire. After you do this, you will be able to programmatically create new submissions for this app using the API.
-  - If you are creating or updating an app submission and you need to include new package, [prepare the package details](publish-your-app/upload-app-packages.md?pivots=store-installer-msi-exe).
-  - If you are creating or updating an app submission and you need to include screenshots or images for the Store listing, [prepare the app screenshots and images](publish-your-app/create-app-store-listing.md?pivots=store-installer-msi-exe).
+  - If your app does not yet exist in Partner Center, you must [create your app by reserving its name](publish-your-app/msix/reserve-your-apps-name.md) in Partner Center. You cannot use the Microsoft Store submission API to create an app in Partner Center; you must work in Partner Center to create it, and then after that you can use the API to access the app and programmatically create submissions for it.
+  - Before you can create a submission for a given app using this API, you must first [create one submission for the app](publish-your-app/msix/create-app-submission.md) in Partner Center, including answering the [age ratings](publish-your-app/msix/age-ratings.md) questionnaire. After you do this, you will be able to programmatically create new submissions for this app using the API.
+  - If you are creating or updating an app submission and you need to include new package, [prepare the package details](publish-your-app/msi/upload-app-packages.md).
+  - If you are creating or updating an app submission and you need to include screenshots or images for the Store listing, [prepare the app screenshots and images](publish-your-app/msi/create-app-store-listing.md).
 
 ### How to associate an Azure AD application with your Partner Center account
 
@@ -1771,7 +1771,7 @@ namespace Win32SubmissionApiCSharpSample
     {
         /// <summary>
         /// Client Id of your Azure Active Directory app.
-        /// Example" ba3c223b-03ab-4a44-aa32-38aa10c27e32
+        /// Example" 00001111-aaaa-2222-bbbb-3333cccc4444
         /// </summary>
         public string ClientId { get; set; }
 
@@ -1951,7 +1951,7 @@ namespace Win32SubmissionApiCSharpSample
                     {
                         if(AppDraftStatus.errors[index].code == "packageuploaderror")
                         {
-                            throw new InvalidOperationException("Package Upload Failed. Please try commiting packages again.");
+                            throw new InvalidOperationException("Package Upload Failed. Please try committing packages again.");
                         }
                     }
                 }
@@ -2178,7 +2178,7 @@ namespace Win32SubmissionApiCSharpSample
         /// </summary>
         /// <param name="tokenEndpoint">Token endpoint to which the request is to be made. Specific to your
         /// Azure Active Directory app. Example: https://login.microsoftonline.com/d454d300-128e-2d81-334a-27d9b2baf002/oauth2/v2.0/token </param>
-        /// <param name="clientId">Client Id of your Azure Active Directory app. Example" ba3c223b-03ab-4a44-aa32-38aa10c27e32</param>
+        /// <param name="clientId">Client Id of your Azure Active Directory app. Example" 00001111-aaaa-2222-bbbb-3333cccc4444</param>
         /// <param name="clientSecret">Client secret of your Azure Active Directory app</param>
         /// <param name="scope">Scope. If not provided, default one is used for the production API endpoint.</param>
         /// <returns>Autorization token. Prepend it with "Bearer: " and pass it in the request header as the

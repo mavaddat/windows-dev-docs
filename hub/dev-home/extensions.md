@@ -1,11 +1,14 @@
 ---
 title: Dev Home Extensions
 description: Dev Home supports both default and custom-built extensions. Learn more about the Dev Home GitHub extension, how to customize Git widgets and notifications in the Dev Home dashboard, and how to build your own Dev Home extension.
-ms.date: 02/20/2024
+ms.date: 01/28/2025
 ms.topic: overview
 ---
 
 # Dev Home extensions
+
+> [!IMPORTANT]
+> Dev Home will be going away in May 2025 and a subset of its features will be moved to new places. Stay tuned for more information in the following months.
 
 Dev Home supports both default and custom-built extensions. Learn more about the Dev Home GitHub extension, how to customize Git widgets and notifications in the Dev Home dashboard, and how to build your own Dev Home extension.
 
@@ -61,4 +64,4 @@ The Dev Home Azure extension provides customizable widgets for the Dev Home dash
 
 ## Build your own custom Dev Home extension
 
-If you are interested in building your own extension to use with Dev Home, visit the [Dev Home repo on GitHub](https://github.com/microsoft/devhome/blob/main/docs/extensions.md) to find documentation on how to get started.
+If you are interested in building your own extension to use with Dev Home, visit the [Dev Home repo on GitHub](https://github.com/microsoft/devhome/blob/main/docs/extensions/readme.md) to find documentation on how to get started.

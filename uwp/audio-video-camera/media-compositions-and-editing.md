@@ -38,7 +38,7 @@ Media compositions typically contain one or more video clips. You can use a [**F
 
 -   A **MediaClip** can only be included in a composition once. Attempting to add a **MediaClip** that is already being used by the composition will result in an error. To reuse a video clip multiple times in a composition, call [**Clone**](/uwp/api/windows.media.editing.mediaclip.clone) to create new **MediaClip** objects which can then be added to the composition.
 
--   Universal Windows apps do not have permission to access the entire file system. The [**FutureAccessList**](/uwp/api/windows.storage.accesscache.storageapplicationpermissions.futureaccesslist) property of the [**StorageApplicationPermissions**](/uwp/api/Windows.Storage.AccessCache.StorageApplicationPermissions) class allows your app to store a record of a file that has been selected by the user so that you can retain permissions to access the file. The **FutureAccessList** has a maxium of 1000 entries, so your app needs to manage the list to make sure it does not become full. This is especially important if you plan to support loading and modifying previously created compositions.
+-   Universal Windows apps do not have permission to access the entire file system. The [**FutureAccessList**](/uwp/api/windows.storage.accesscache.storageapplicationpermissions.futureaccesslist) property of the [**StorageApplicationPermissions**](/uwp/api/Windows.Storage.AccessCache.StorageApplicationPermissions) class allows your app to store a record of a file that has been selected by the user so that you can retain permissions to access the file. The **FutureAccessList** has a maximum of 1000 entries, so your app needs to manage the list to make sure it does not become full. This is especially important if you plan to support loading and modifying previously created compositions.
 
 -   A **MediaComposition** supports video clips in MP4 format.
 
@@ -48,7 +48,7 @@ Media compositions typically contain one or more video clips. You can use a [**F
 
 -   Create a **MediaClip** from an image file by calling [**CreateFromImageFileAsync**](/uwp/api/windows.media.editing.mediaclip.createfromimagefileasync) and specifying an image file and a duration for the clip.
 
--   Create a **MediaClip** from a [**IDirect3DSurface**](/uwp/api/Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface) by calling [**CreateFromSurface**](/uwp/api/windows.media.editing.mediaclip.createfromsurface) and specifying a surface and a duration from the clip.
+-   Create a **MediaClip** from an [**IDirect3DSurface**](/uwp/api/Windows.Graphics.DirectX.Direct3D11.IDirect3DSurface) by calling [**CreateFromSurface**](/uwp/api/windows.media.editing.mediaclip.createfromsurface) and specifying a surface and a duration from the clip.
 
 ## Preview the composition in a MediaElement
 

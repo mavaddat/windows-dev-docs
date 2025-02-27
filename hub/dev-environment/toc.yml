@@ -9,6 +9,8 @@ items:
         href: ../dev-home/index.md
       - name: Machine configuration
         href: ../dev-home/setup.md
+      - name: Utilities
+        href: ../dev-home/utilities.md
       - name: Extensions
         href: ../dev-home/extensions.md
       - name: Environments
@@ -109,6 +111,8 @@ items:
             href: ../powertoys/grouppolicy.md
           - name: Report a Bug
             href: https://github.com/microsoft/PowerToys/issues/new/choose
+      - name: Advanced Paste
+        href: ../powertoys/advanced-paste.md
       - name: Always on Top
         href: ../powertoys/always-on-top.md
       - name: Awake
@@ -137,8 +141,8 @@ items:
         href: ../powertoys/mouse-utilities.md
       - name: Mouse without Borders
         href: ../powertoys/mouse-without-borders.md
-      - name: Paste as Plain Text
-        href: ../powertoys/paste-as-plain-text.md
+      - name: New+
+        href: ../powertoys/newplus.md
       - name: Peek
         href: ../powertoys/peek.md
       - name: PowerRename
@@ -157,6 +161,10 @@ items:
         href: ../powertoys/text-extractor.md
       - name: Video Conference Mute
         href: ../powertoys/video-conference-mute.md
+      - name: Workspaces
+        href: ../powertoys/workspaces.md
+      - name: ZoomIt
+        href: ../powertoys/zoomit.md
   - name: Windows Subsystem for Linux
     href: /windows/wsl/
   - name: Windows Terminal
@@ -193,7 +201,7 @@ items:
               href: ./javascript/react-on-wsl.md
             - name: Install on Windows
               href: ./javascript/react-on-windows.md
-            - name: Install React Native for Windows
+            - name: Install React Native for Desktop
               href: ./javascript/react-native-for-windows.md
             - name: Install React Native for Android
               href: ./javascript/react-native-for-android.md
@@ -237,8 +245,6 @@ items:
               href: ../android/wsa/index.md
             - name: Release notes
               href:  ../android/wsa/release-notes.md
-            - name: Preview program
-              href: ../android/wsa/preview-program.md
         - name: Native Android
           href: ../android/native-android.md
         - name: Cross-platform
@@ -247,8 +253,6 @@ items:
               href: ../dev-environment/javascript/react-native-for-android.md
             - name: PWA (Ionic, PhoneGap, Cordova)
               href: ../android/pwa.md
-        - name: Defender settings to improve performance
-          href: ../android/defender-settings.md
         - name: Test on device or emulator
           href: ../android/emulator.md
   - name: Get started with C and C++

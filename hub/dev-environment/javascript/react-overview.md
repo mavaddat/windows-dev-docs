@@ -1,9 +1,6 @@
 ---
 title: React on Windows
 description: A guide to help you set up a React JavaScript development environment on Windows.
-author: drewbatgit 
-ms.author: drewbat 
-manager: jken
 ms.topic: article
 keywords: React, React JS, react on windows 10, react on windows, what is react, react with windows, web app with react
 ms.localizationpriority: medium
@@ -33,7 +30,7 @@ Windows supports a wide range of scenarios for React developers, including:
 
 - **Single-Page Apps (SPAs)**: These are websites that interact with the user by dynamically rewriting the current web page with new data from a server, rather than the browser default of loading entire new pages. If you want to build a static content-oriented SPA website, we recommend installing [Gatsby on WSL](./gatsby-on-wsl.md). If you want to build a server-rendered SPA website with a Node.js backend, we recommend [installing Next.js on WSL](./nextjs-on-wsl.md). (Though Next.js now also offers [static file serving](https://nextjs.org/docs/app/building-your-application/optimizing/static-assets)).
 
-- **Native desktop apps**: [React Native for Windows + macOS](https://microsoft.github.io/react-native-windows/) enables you to build native desktop applications with JavaScript that run across various types of desktop PCs, laptops, tablets, Xbox, and Mixed Reality devices. It supports both the [Windows SDK](https://microsoft.github.io/react-native-windows/docs/rnw-dependencies) and [macOS SDK](https://microsoft.github.io/react-native-windows/docs/rnm-dependencies).
+- **Native desktop apps**: [React Native for Desktop + macOS](https://microsoft.github.io/react-native-windows/) enables you to build native desktop applications with JavaScript that run across various types of desktop PCs, laptops, tablets, Xbox, and Mixed Reality devices. It supports both the [Windows SDK](https://microsoft.github.io/react-native-windows/docs/rnw-dependencies) and [macOS SDK](https://microsoft.github.io/react-native-windows/docs/rnm-dependencies).
 
 - **Native mobile apps**: [React Native](https://reactnative.dev/docs/environment-setup) is a cross-platform way to create Android and iOS apps with JavaScript that render to native platform UI code. There are two main ways to install React Native -- the Expo CLI and the React Native CLI. There's a good [comparison of the two on StackOverflow](https://stackoverflow.com/questions/54862388/what-is-the-difference-between-expo-cli-and-react-native-cli). Expo has a client app for iOS and Android mobile devices for running and testing your apps. For instructions on developing an Android app using Windows, React Native, and the Expo CLI see [React Native for Android development on Windows](./react-native-for-android.md).
 
@@ -46,7 +43,7 @@ There are several different ways to install React along with an integrated toolc
 - **[Install React using Vite on Windows Subsystem for Linux (WSL)](./react-on-wsl.md)**
 - **[Install the Next.js framework on WSL](./nextjs-on-wsl.md)**
 - **[Install the Gatsby framework on WSL](./gatsby-on-wsl.md)**
-- **[Install React Native for Windows desktop development](./react-native-for-windows.md)**
+- **[Install React Native for Desktop desktop development](./react-native-for-windows.md)**
 - **[Install React Native for Android development on Windows](./react-native-for-android.md)**
 - **[Install React Native for mobile development across platforms](https://reactnative.dev/docs/environment-setup)**)
 - **[Install React in the browser with no toolchain](https://reactjs.org/docs/add-react-to-a-website.html)**: Since React is a JavaScript library that is, in its most basic form, just a collection of text files, you can create React apps without installing any tools or libraries on your computer. You may only want to add a few "sprinkles of interactivity" to a web page and not need build tooling. You can add a React component by just adding a plain `<script>` tag on an HTML page. Follow the ["Add React in One Minute"](https://reactjs.org/docs/add-react-to-a-website.html) steps in the React docs.
@@ -59,7 +56,7 @@ While writing a simple React component in a plain text editor is a good introduc
 - **Bundling** - Since performance is key for modern web apps, it's important that an app's JavaScript includes only the needed code for the app and combined into as few files as possible. A bundler, such as [webpack](https://webpack.js.org/) performs this task for you.
 - **Package management** - Package managers make it easy to include the functionality of third-party packages in your app, including updating them and managing dependencies. Commonly used package managers include [Yarn](https://yarnpkg.com/) and [npm](https://www.npmjs.com/).
 
-Together, the suite of frameworks that help you create, build, and deploy your app are called a toolchain. An easy to setup development enviornment for react that uses this toolchain is [Vite](https://vitejs.dev/) which generates a simple one-page app for you. The only setup required to use **Vite** is Node.js.
+Together, the suite of frameworks that help you create, build, and deploy your app are called a toolchain. An easy to setup development environment for react that uses this toolchain is [Vite](https://vitejs.dev/) which generates a simple one-page app for you. The only setup required to use **Vite** is Node.js.
 
 - For Windows development, follow the instructions to [install Node.js on WSL](./nodejs-on-wsl.md) or [install Node.js on Windows](./nodejs-on-windows.md).
 

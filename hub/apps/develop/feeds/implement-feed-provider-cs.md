@@ -3,8 +3,6 @@ title: Implement a feed provider in a C# Windows App
 description: This article walks you through the process of creating a feed provider, implemented in C#, that registers a feed content URI and responds to requests from the Widgets Board. 
 ms.topic: article
 ms.date: 11/02/2023
-ms.author: drewbat
-author: drewbatgit
 ms.localizationpriority: medium
 ---
 
@@ -450,4 +448,8 @@ To convert the console app created in this walkthrough to a Windows app, right-c
 ## Publishing your feed provider app
 
 After you have developed and tested your feed provider you can publish your app on the Microsoft Store in order for users to install your feeds on their devices. For step by step guidance for publishing an app, see [Publish your app in the Microsoft Store](/windows/apps/publish/publish-your-app/overview?pivots=store-installer-msix).
+
+### The Feeds Store Collection
+
+After your app has been published on the Microsoft Store, you can request for your app to be included in the feeds Store Collection that helps users discover apps that feature Windows feeds. To submit your request, see [Submit your Feed/Board for addition to the Store Collection](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR33MBPKauFRGiaSf7B00-UBUMk9FU1M0TEVOTjA4R0xGQTQwNU1aTFVQNi4u).
 
